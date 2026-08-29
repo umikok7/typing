@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import type { KeyboardEvent, ReactNode } from 'react';
 
 import type { TokenLine } from '@/lib/highlighter';
-import { useCodeTokens } from '@/lib/use-code-tokens';
+import { useSyncCodeTokens } from '@/lib/use-code-tokens';
 
 import { getProblem, problems } from '../data/problems';
 import { useAppStore } from '../store';
@@ -59,8 +59,8 @@ export function TypingArea() {
   const input = useAppStore((s) => s.input);
   const setInput = useAppStore((s) => s.setInput);
   const problem = getProblem(problemId) ?? problems[0];
-  const referenceHl = useCodeTokens(problem.source, themeId);
-  const inputHl = useCodeTokens(input, themeId);
+  const referenceHl = useSyncCodeTokens(problem.source, themeId);
+  const inputHl = useSyncCodeTokens(input, themeId);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const preRef = useRef<HTMLPreElement | null>(null);
   const ghostRef = useRef<HTMLDivElement | null>(null);
@@ -114,14 +114,14 @@ export function TypingArea() {
           aria-hidden='true'
           className='pointer-events-none absolute inset-0 overflow-hidden opacity-40 select-none'
         >
-          <div className='p-8 font-mono text-lg leading-relaxed whitespace-pre'>
+          <div className='p-8 font-mono text-lg leading-relaxed whitespace-pre [tab-size:4]'>
             {referenceHl === null ? null : <HighlightedLines lines={referenceHl.lines} />}
           </div>
         </div>
         <pre
           ref={preRef}
           aria-hidden='true'
-          className='no-scrollbar text-foreground pointer-events-none absolute inset-0 m-0 overflow-auto p-8 font-mono text-lg leading-relaxed whitespace-pre'
+          className='no-scrollbar text-foreground pointer-events-none absolute inset-0 m-0 overflow-auto p-8 font-mono text-lg leading-relaxed whitespace-pre [tab-size:4]'
         >
           {inputContent}
         </pre>
@@ -137,7 +137,7 @@ export function TypingArea() {
           autoCapitalize='off'
           autoCorrect='off'
           autoComplete='off'
-          className='no-scrollbar caret-accent absolute inset-0 h-full w-full resize-none overflow-auto bg-transparent p-8 font-mono text-lg leading-relaxed whitespace-pre text-transparent outline-none'
+          className='no-scrollbar caret-accent absolute inset-0 h-full w-full resize-none overflow-auto bg-transparent p-8 font-mono text-lg leading-relaxed whitespace-pre [tab-size:4] text-transparent outline-none'
         />
       </div>
     </div>

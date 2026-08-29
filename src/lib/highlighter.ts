@@ -18,20 +18,23 @@ export interface TokenizedCode {
 
 const DEFAULT_FG = '#d4d4d4';
 
+let highlighter: HighlighterCore | null = null;
 let highlighterPromise: Promise<HighlighterCore> | null = null;
 
-function getHighlighter(): Promise<HighlighterCore> {
+export function getHighlighter(): Promise<HighlighterCore> {
   highlighterPromise ??= createHighlighterCore({
     langs: [goGrammar],
     themes: editorThemes.map((theme) => theme.raw),
     engine: createJavaScriptRegexEngine({ target: 'auto' })
+  }).then((instance) => {
+    highlighter = instance;
+    return instance;
   });
   return highlighterPromise;
 }
 
-async function doTokenize(source: string, themeId: string): Promise<TokenizedCode> {
-  const highlighter = await getHighlighter();
-  const tokenLines = highlighter.codeToTokensBase(source, { lang: 'go', theme: themeId });
+function tokenizeLines(instance: HighlighterCore, source: string, themeId: string): TokenizedCode {
+  const tokenLines = instance.codeToTokensBase(source, { lang: 'go', theme: themeId });
   const theme = editorThemes.find((t) => t.id === themeId);
   const fg = theme?.fg ?? DEFAULT_FG;
   const bg = theme?.bg ?? DEFAULT_FG;
@@ -58,14 +61,25 @@ async function doTokenize(source: string, themeId: string): Promise<TokenizedCod
 
 const cache = new Map<string, TokenizedCode>();
 
-export async function tokenizeCode(source: string, themeId: string): Promise<TokenizedCode> {
+export function tokenizeCodeSync(source: string, themeId: string): TokenizedCode | null {
+  if (highlighter === null) {
+    return null;
+  }
   const key = JSON.stringify([themeId, source]);
   const hit = cache.get(key);
   if (hit !== undefined) {
     return hit;
   }
-
-  const code = await doTokenize(source, themeId);
+  const code = tokenizeLines(highlighter, source, themeId);
   cache.set(key, code);
+  return code;
+}
+
+export async function tokenizeCode(source: string, themeId: string): Promise<TokenizedCode> {
+  await getHighlighter();
+  const code = tokenizeCodeSync(source, themeId);
+  if (code === null) {
+    return { lines: [], bg: DEFAULT_FG, fg: DEFAULT_FG };
+  }
   return code;
 }

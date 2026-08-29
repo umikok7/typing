@@ -1,30 +1,25 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
+import { getHighlighter, tokenizeCodeSync } from './highlighter';
 import type { TokenizedCode } from './highlighter';
 
-interface CodeTokensEntry {
-  source: string;
-  themeId: string;
-  code: TokenizedCode;
-}
-
-export function useCodeTokens(source: string, themeId: string): TokenizedCode | null {
-  const [entry, setEntry] = useState<CodeTokensEntry | null>(null);
+export function useSyncCodeTokens(source: string, themeId: string): TokenizedCode | null {
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
-    void import('./highlighter')
-      .then((mod) => mod.tokenizeCode(source, themeId))
-      .then((code) => {
-        if (!cancelled) {
-          setEntry({ source, themeId, code });
-        }
-      });
+    void getHighlighter().then(() => {
+      if (!cancelled) {
+        setReady(true);
+      }
+    });
     return () => {
       cancelled = true;
     };
-  }, [source, themeId]);
+  }, []);
 
-  const fresh = entry !== null && entry.source === source && entry.themeId === themeId;
-  return fresh ? entry.code : null;
+  return useMemo(
+    () => (ready ? tokenizeCodeSync(source, themeId) : null),
+    [source, themeId, ready]
+  );
 }
