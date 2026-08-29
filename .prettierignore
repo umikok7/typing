@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/pnpm-lock.yaml
+
+# build
+/dist
+/coverage
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# local env
+.env*.local
