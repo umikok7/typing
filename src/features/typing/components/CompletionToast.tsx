@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ArrowRight, CheckCircle2, RotateCcw, X } from 'lucide-react';
 
 import { getProblem, problems } from '../data/problems';
+import { isCompleted } from '../is-completed';
 import { useAppStore } from '../store';
 
 export function CompletionToast() {
@@ -15,7 +16,7 @@ export function CompletionToast() {
   const problem = getProblem(problemId) ?? problems[0];
   const source = problem.sources[language];
 
-  const finished = input.length >= source.length;
+  const finished = isCompleted(input, source);
   if (!finished || dismissedFor === problemId) {
     return null;
   }
@@ -24,7 +25,7 @@ export function CompletionToast() {
   const nextId = problems[(index + 1) % problems.length]?.id ?? problem.id;
 
   return (
-    <div className='fixed bottom-5 left-1/2 z-50 -translate-x-1/2'>
+    <div className='fixed bottom-10 left-1/2 z-50 -translate-x-1/2'>
       <div className='border-border bg-background flex items-center gap-2 rounded-lg border px-4 py-2.5 shadow-lg'>
         <CheckCircle2 size={18} className='text-easy' />
         <span className='mr-1 text-sm font-medium'>完成</span>
