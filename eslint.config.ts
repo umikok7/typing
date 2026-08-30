@@ -110,7 +110,7 @@ const TYPESCRIPT_RULES: Linter.RulesRecord = {
 
 export default defineConfig(
   {
-    ignores: ['dist', 'node_modules', 'skills']
+    ignores: ['dist', 'node_modules', 'skills', 'src/features/typing/data/ts']
   },
   reactHooks.configs.flat['recommended-latest'],
   reactX.configs['recommended-type-checked'],

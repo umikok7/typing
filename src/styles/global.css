@@ -51,6 +51,22 @@
   color-scheme: dark;
 }
 
+/* brand cursor blink */
+.ct-blink {
+  animation: ct-blink 1.1s step-end infinite;
+}
+
+@keyframes ct-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
 /* reference code area: keep line breaks, allow both-axis scroll */
 .ct-ref-scroll {
   overflow: auto;

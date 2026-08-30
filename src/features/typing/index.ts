@@ -5,4 +5,4 @@ export { DifficultyBadge } from './components/DifficultyBadge';
 export { ProblemPicker } from './components/ProblemPicker';
 export { TopBar } from './components/TopBar';
 export { TypingArea } from './components/TypingArea';
-export type { Difficulty, Problem } from './types';
+export type { Difficulty, Language, Problem } from './types';

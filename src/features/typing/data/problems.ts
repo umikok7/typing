@@ -29,6 +29,36 @@ import searchRotatedSource from './go/search_in_rotated_sorted_array.go?raw';
 import trappingRainWaterSource from './go/trapping_rain_water.go?raw';
 import twoSumSource from './go/two_sum.go?raw';
 import validParenthesesSource from './go/valid_parentheses.go?raw';
+import threeSumTsSource from './ts/3sum.ts?raw';
+import addTwoNumbersTsSource from './ts/add_two_numbers.ts?raw';
+import bestTimeTsSource from './ts/best_time_to_buy_and_sell_stock.ts?raw';
+import binaryTreeInorderTsSource from './ts/binary_tree_inorder_traversal.ts?raw';
+import binaryTreeLevelOrderTsSource from './ts/binary_tree_level_order_traversal.ts?raw';
+import climbingStairsTsSource from './ts/climbing_stairs.ts?raw';
+import containerWithMostWaterTsSource from './ts/container_with_most_water.ts?raw';
+import findFirstLastTsSource from './ts/find_first_and_last_position_of_element_in_sorted_array.ts?raw';
+import generateParenthesisTsSource from './ts/generate_parentheses.ts?raw';
+import groupAnagramsTsSource from './ts/group_anagrams.ts?raw';
+import largestRectangleTsSource from './ts/largest_rectangle_in_histogram.ts?raw';
+import letterCombinationsTsSource from './ts/letter_combinations_of_a_phone_number.ts?raw';
+import longestConsecutiveTsSource from './ts/longest_consecutive_sequence.ts?raw';
+import longestPalindromeTsSource from './ts/longest_palindromic_substring.ts?raw';
+import longestSubstringTsSource from './ts/longest_substring_without_repeating_characters.ts?raw';
+import lruCacheTsSource from './ts/lru_cache.ts?raw';
+import maxSubArrayTsSource from './ts/maximum_subarray.ts?raw';
+import medianTsSource from './ts/median_of_two_sorted_arrays.ts?raw';
+import mergeIntervalsTsSource from './ts/merge_intervals.ts?raw';
+import mergeKSortedListsTsSource from './ts/merge_k_sorted_lists.ts?raw';
+import mergeTwoListsTsSource from './ts/merge_two_sorted_lists.ts?raw';
+import minWindowTsSource from './ts/minimum_window_substring.ts?raw';
+import permutationsTsSource from './ts/permutations.ts?raw';
+import removeNthFromEndTsSource from './ts/remove_nth_node_from_end_of_list.ts?raw';
+import reverseListTsSource from './ts/reverse_linked_list.ts?raw';
+import rotateImageTsSource from './ts/rotate_image.ts?raw';
+import searchRotatedTsSource from './ts/search_in_rotated_sorted_array.ts?raw';
+import trappingRainWaterTsSource from './ts/trapping_rain_water.ts?raw';
+import twoSumTsSource from './ts/two_sum.ts?raw';
+import validParenthesesTsSource from './ts/valid_parentheses.ts?raw';
 
 export const problems: readonly Problem[] & { 0: Problem } = [
   {
@@ -37,7 +67,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '两数之和',
     difficulty: 'Easy',
     topic: '哈希表',
-    source: twoSumSource
+    sources: { go: twoSumSource, ts: twoSumTsSource }
   },
   {
     id: 'add-two-numbers',
@@ -45,7 +75,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '两数相加',
     difficulty: 'Medium',
     topic: '链表',
-    source: addTwoNumbersSource
+    sources: { go: addTwoNumbersSource, ts: addTwoNumbersTsSource }
   },
   {
     id: 'longest-substring-without-repeating-characters',
@@ -53,7 +83,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '无重复字符的最长子串',
     difficulty: 'Medium',
     topic: '滑动窗口',
-    source: longestSubstringSource
+    sources: { go: longestSubstringSource, ts: longestSubstringTsSource }
   },
   {
     id: 'median-of-two-sorted-arrays',
@@ -61,7 +91,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '寻找两个正序数组的中位数',
     difficulty: 'Hard',
     topic: '二分查找',
-    source: medianSource
+    sources: { go: medianSource, ts: medianTsSource }
   },
   {
     id: 'longest-palindromic-substring',
@@ -69,7 +99,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '最长回文子串',
     difficulty: 'Medium',
     topic: '动态规划',
-    source: longestPalindromeSource
+    sources: { go: longestPalindromeSource, ts: longestPalindromeTsSource }
   },
   {
     id: 'container-with-most-water',
@@ -77,7 +107,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '盛最多水的容器',
     difficulty: 'Medium',
     topic: '双指针',
-    source: containerWithMostWaterSource
+    sources: { go: containerWithMostWaterSource, ts: containerWithMostWaterTsSource }
   },
   {
     id: '3sum',
@@ -85,7 +115,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '三数之和',
     difficulty: 'Medium',
     topic: '双指针',
-    source: threeSumSource
+    sources: { go: threeSumSource, ts: threeSumTsSource }
   },
   {
     id: 'letter-combinations-of-a-phone-number',
@@ -93,7 +123,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '电话号码的字母组合',
     difficulty: 'Medium',
     topic: '回溯',
-    source: letterCombinationsSource
+    sources: { go: letterCombinationsSource, ts: letterCombinationsTsSource }
   },
   {
     id: 'remove-nth-node-from-end-of-list',
@@ -101,7 +131,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '删除链表的倒数第 N 个结点',
     difficulty: 'Medium',
     topic: '链表',
-    source: removeNthFromEndSource
+    sources: { go: removeNthFromEndSource, ts: removeNthFromEndTsSource }
   },
   {
     id: 'valid-parentheses',
@@ -109,7 +139,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '有效的括号',
     difficulty: 'Easy',
     topic: '栈',
-    source: validParenthesesSource
+    sources: { go: validParenthesesSource, ts: validParenthesesTsSource }
   },
   {
     id: 'merge-two-sorted-lists',
@@ -117,7 +147,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '合并两个有序链表',
     difficulty: 'Easy',
     topic: '链表',
-    source: mergeTwoListsSource
+    sources: { go: mergeTwoListsSource, ts: mergeTwoListsTsSource }
   },
   {
     id: 'generate-parentheses',
@@ -125,7 +155,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '括号生成',
     difficulty: 'Medium',
     topic: '回溯',
-    source: generateParenthesisSource
+    sources: { go: generateParenthesisSource, ts: generateParenthesisTsSource }
   },
   {
     id: 'merge-k-sorted-lists',
@@ -133,7 +163,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '合并 K 个升序链表',
     difficulty: 'Hard',
     topic: '堆',
-    source: mergeKSortedListsSource
+    sources: { go: mergeKSortedListsSource, ts: mergeKSortedListsTsSource }
   },
   {
     id: 'search-in-rotated-sorted-array',
@@ -141,7 +171,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '搜索旋转排序数组',
     difficulty: 'Medium',
     topic: '二分查找',
-    source: searchRotatedSource
+    sources: { go: searchRotatedSource, ts: searchRotatedTsSource }
   },
   {
     id: 'find-first-and-last-position-of-element-in-sorted-array',
@@ -149,7 +179,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '在排序数组中查找元素的第一个和最后一个位置',
     difficulty: 'Medium',
     topic: '二分查找',
-    source: findFirstLastSource
+    sources: { go: findFirstLastSource, ts: findFirstLastTsSource }
   },
   {
     id: 'trapping-rain-water',
@@ -157,7 +187,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '接雨水',
     difficulty: 'Hard',
     topic: '双指针',
-    source: trappingRainWaterSource
+    sources: { go: trappingRainWaterSource, ts: trappingRainWaterTsSource }
   },
   {
     id: 'permutations',
@@ -165,7 +195,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '全排列',
     difficulty: 'Medium',
     topic: '回溯',
-    source: permutationsSource
+    sources: { go: permutationsSource, ts: permutationsTsSource }
   },
   {
     id: 'rotate-image',
@@ -173,7 +203,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '旋转图像',
     difficulty: 'Medium',
     topic: '数组',
-    source: rotateImageSource
+    sources: { go: rotateImageSource, ts: rotateImageTsSource }
   },
   {
     id: 'group-anagrams',
@@ -181,7 +211,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '字母异位词分组',
     difficulty: 'Medium',
     topic: '哈希表',
-    source: groupAnagramsSource
+    sources: { go: groupAnagramsSource, ts: groupAnagramsTsSource }
   },
   {
     id: 'maximum-subarray',
@@ -189,7 +219,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '最大子数组和',
     difficulty: 'Easy',
     topic: '动态规划',
-    source: maxSubArraySource
+    sources: { go: maxSubArraySource, ts: maxSubArrayTsSource }
   },
   {
     id: 'merge-intervals',
@@ -197,7 +227,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '合并区间',
     difficulty: 'Medium',
     topic: '排序',
-    source: mergeIntervalsSource
+    sources: { go: mergeIntervalsSource, ts: mergeIntervalsTsSource }
   },
   {
     id: 'climbing-stairs',
@@ -205,7 +235,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '爬楼梯',
     difficulty: 'Easy',
     topic: '动态规划',
-    source: climbingStairsSource
+    sources: { go: climbingStairsSource, ts: climbingStairsTsSource }
   },
   {
     id: 'binary-tree-inorder-traversal',
@@ -213,7 +243,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '二叉树的中序遍历',
     difficulty: 'Easy',
     topic: '二叉树',
-    source: binaryTreeInorderSource
+    sources: { go: binaryTreeInorderSource, ts: binaryTreeInorderTsSource }
   },
   {
     id: 'binary-tree-level-order-traversal',
@@ -221,7 +251,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '二叉树的层序遍历',
     difficulty: 'Medium',
     topic: '二叉树',
-    source: binaryTreeLevelOrderSource
+    sources: { go: binaryTreeLevelOrderSource, ts: binaryTreeLevelOrderTsSource }
   },
   {
     id: 'best-time-to-buy-and-sell-stock',
@@ -229,7 +259,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '买卖股票的最佳时机',
     difficulty: 'Easy',
     topic: '动态规划',
-    source: bestTimeSource
+    sources: { go: bestTimeSource, ts: bestTimeTsSource }
   },
   {
     id: 'longest-consecutive-sequence',
@@ -237,7 +267,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '最长连续序列',
     difficulty: 'Medium',
     topic: '哈希表',
-    source: longestConsecutiveSource
+    sources: { go: longestConsecutiveSource, ts: longestConsecutiveTsSource }
   },
   {
     id: 'lru-cache',
@@ -245,7 +275,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: 'LRU 缓存',
     difficulty: 'Medium',
     topic: '设计',
-    source: lruCacheSource
+    sources: { go: lruCacheSource, ts: lruCacheTsSource }
   },
   {
     id: 'reverse-linked-list',
@@ -253,7 +283,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '反转链表',
     difficulty: 'Easy',
     topic: '链表',
-    source: reverseListSource
+    sources: { go: reverseListSource, ts: reverseListTsSource }
   },
   {
     id: 'minimum-window-substring',
@@ -261,7 +291,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '最小覆盖子串',
     difficulty: 'Hard',
     topic: '滑动窗口',
-    source: minWindowSource
+    sources: { go: minWindowSource, ts: minWindowTsSource }
   },
   {
     id: 'largest-rectangle-in-histogram',
@@ -269,7 +299,7 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     title: '柱状图中最大的矩形',
     difficulty: 'Hard',
     topic: '单调栈',
-    source: largestRectangleSource
+    sources: { go: largestRectangleSource, ts: largestRectangleTsSource }
   }
 ];
 

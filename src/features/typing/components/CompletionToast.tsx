@@ -7,13 +7,15 @@ import { useAppStore } from '../store';
 
 export function CompletionToast() {
   const problemId = useAppStore((s) => s.problemId);
+  const language = useAppStore((s) => s.language);
   const input = useAppStore((s) => s.input);
   const selectProblem = useAppStore((s) => s.selectProblem);
   const reset = useAppStore((s) => s.reset);
   const [dismissedFor, setDismissedFor] = useState<string | null>(null);
   const problem = getProblem(problemId) ?? problems[0];
+  const source = problem.sources[language];
 
-  const finished = input.length >= problem.source.length;
+  const finished = input.length >= source.length;
   if (!finished || dismissedFor === problemId) {
     return null;
   }

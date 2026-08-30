@@ -1,9 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 
+import type { Language } from '@/types/language';
+
 import { getHighlighter, tokenizeCodeSync } from './highlighter';
 import type { TokenizedCode } from './highlighter';
 
-export function useSyncCodeTokens(source: string, themeId: string): TokenizedCode | null {
+export function useSyncCodeTokens(
+  source: string,
+  language: Language,
+  themeId: string
+): TokenizedCode | null {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -19,7 +25,7 @@ export function useSyncCodeTokens(source: string, themeId: string): TokenizedCod
   }, []);
 
   return useMemo(
-    () => (ready ? tokenizeCodeSync(source, themeId) : null),
-    [source, themeId, ready]
+    () => (ready ? tokenizeCodeSync(source, language, themeId) : null),
+    [source, language, themeId, ready]
   );
 }

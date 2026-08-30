@@ -41,4 +41,11 @@ describe('useAppStore', () => {
     expect(useAppStore.getState().themeId).toBe('dracula');
     expect(window.localStorage.getItem('code-typing:theme-id')).toBe('dracula');
   });
+
+  it('setLanguage switches language and clears the input', () => {
+    useAppStore.getState().setInput('package main');
+    useAppStore.getState().setLanguage('ts');
+    expect(useAppStore.getState().language).toBe('ts');
+    expect(useAppStore.getState().input).toBe('');
+  });
 });

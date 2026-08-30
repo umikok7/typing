@@ -1,7 +1,12 @@
 import goGrammar from '@shikijs/langs/go';
+import tsGrammar from '@shikijs/langs/typescript';
 import { createHighlighterCore, createJavaScriptRegexEngine, type HighlighterCore } from 'shiki';
 
+import type { Language } from '@/types/language';
+
 import { editorThemes } from './themes';
+
+const SHIKI_LANG: Record<Language, string> = { go: 'go', ts: 'typescript' };
 
 export interface TokenLine {
   start: number;
@@ -23,7 +28,7 @@ let highlighterPromise: Promise<HighlighterCore> | null = null;
 
 export function getHighlighter(): Promise<HighlighterCore> {
   highlighterPromise ??= createHighlighterCore({
-    langs: [goGrammar],
+    langs: [goGrammar, tsGrammar],
     themes: editorThemes.map((theme) => theme.raw),
     engine: createJavaScriptRegexEngine({ target: 'auto' })
   }).then((instance) => {
@@ -33,8 +38,16 @@ export function getHighlighter(): Promise<HighlighterCore> {
   return highlighterPromise;
 }
 
-function tokenizeLines(instance: HighlighterCore, source: string, themeId: string): TokenizedCode {
-  const tokenLines = instance.codeToTokensBase(source, { lang: 'go', theme: themeId });
+function tokenizeLines(
+  instance: HighlighterCore,
+  source: string,
+  language: Language,
+  themeId: string
+): TokenizedCode {
+  const tokenLines = instance.codeToTokensBase(source, {
+    lang: SHIKI_LANG[language],
+    theme: themeId
+  });
   const theme = editorThemes.find((t) => t.id === themeId);
   const fg = theme?.fg ?? DEFAULT_FG;
   const bg = theme?.bg ?? DEFAULT_FG;
@@ -61,23 +74,31 @@ function tokenizeLines(instance: HighlighterCore, source: string, themeId: strin
 
 const cache = new Map<string, TokenizedCode>();
 
-export function tokenizeCodeSync(source: string, themeId: string): TokenizedCode | null {
+export function tokenizeCodeSync(
+  source: string,
+  language: Language,
+  themeId: string
+): TokenizedCode | null {
   if (highlighter === null) {
     return null;
   }
-  const key = JSON.stringify([themeId, source]);
+  const key = JSON.stringify([themeId, language, source]);
   const hit = cache.get(key);
   if (hit !== undefined) {
     return hit;
   }
-  const code = tokenizeLines(highlighter, source, themeId);
+  const code = tokenizeLines(highlighter, source, language, themeId);
   cache.set(key, code);
   return code;
 }
 
-export async function tokenizeCode(source: string, themeId: string): Promise<TokenizedCode> {
+export async function tokenizeCode(
+  source: string,
+  language: Language,
+  themeId: string
+): Promise<TokenizedCode> {
   await getHighlighter();
-  const code = tokenizeCodeSync(source, themeId);
+  const code = tokenizeCodeSync(source, language, themeId);
   if (code === null) {
     return { lines: [], bg: DEFAULT_FG, fg: DEFAULT_FG };
   }

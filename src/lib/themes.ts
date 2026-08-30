@@ -28,10 +28,10 @@ function makeTheme(raw: ThemeRegistrationRaw, name: string): EditorTheme {
 }
 
 export const editorThemes: readonly EditorTheme[] & { 0: EditorTheme } = [
+  makeTheme(githubDarkDefault as unknown as ThemeRegistrationRaw, 'GitHub Dark'),
   makeTheme(oneDarkPro as unknown as ThemeRegistrationRaw, 'One Dark Pro'),
   makeTheme(tokyoNight as unknown as ThemeRegistrationRaw, 'Tokyo Night'),
   makeTheme(dracula as unknown as ThemeRegistrationRaw, 'Dracula'),
-  makeTheme(githubDarkDefault as unknown as ThemeRegistrationRaw, 'GitHub Dark'),
   makeTheme(catppuccinMocha as unknown as ThemeRegistrationRaw, 'Catppuccin Mocha'),
   makeTheme(nord as unknown as ThemeRegistrationRaw, 'Nord')
 ];

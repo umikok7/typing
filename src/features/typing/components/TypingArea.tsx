@@ -55,12 +55,14 @@ function PlainLines({ text }: { text: string }) {
 
 export function TypingArea() {
   const problemId = useAppStore((s) => s.problemId);
+  const language = useAppStore((s) => s.language);
   const themeId = useAppStore((s) => s.themeId);
   const input = useAppStore((s) => s.input);
   const setInput = useAppStore((s) => s.setInput);
   const problem = getProblem(problemId) ?? problems[0];
-  const referenceHl = useSyncCodeTokens(problem.source, themeId);
-  const inputHl = useSyncCodeTokens(input, themeId);
+  const source = problem.sources[language];
+  const referenceHl = useSyncCodeTokens(source, language, themeId);
+  const inputHl = useSyncCodeTokens(input, language, themeId);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const preRef = useRef<HTMLPreElement | null>(null);
   const ghostRef = useRef<HTMLDivElement | null>(null);

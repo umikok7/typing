@@ -1,3 +1,7 @@
+import type { Language } from '@/types/language';
+
+export type { Language } from '@/types/language';
+
 export type Difficulty = 'Easy' | 'Medium' | 'Hard';
 
 export interface Problem {
@@ -6,5 +10,5 @@ export interface Problem {
   title: string;
   difficulty: Difficulty;
   topic: string;
-  source: string;
+  sources: Record<Language, string>;
 }
