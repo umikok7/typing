@@ -1,4 +1,5 @@
 import type { Problem } from '../types';
+import { getDescription } from './descriptions';
 import threeSumSource from './go/3sum.go?raw';
 import addTwoNumbersSource from './go/add_two_numbers.go?raw';
 import bestTimeSource from './go/best_time_to_buy_and_sell_stock.go?raw';
@@ -60,7 +61,7 @@ import trappingRainWaterTsSource from './ts/trapping_rain_water.ts?raw';
 import twoSumTsSource from './ts/two_sum.ts?raw';
 import validParenthesesTsSource from './ts/valid_parentheses.ts?raw';
 
-export const problems: readonly Problem[] & { 0: Problem } = [
+const baseProblems = [
   {
     id: 'two-sum',
     number: 1,
@@ -302,6 +303,11 @@ export const problems: readonly Problem[] & { 0: Problem } = [
     sources: { go: largestRectangleSource, ts: largestRectangleTsSource }
   }
 ];
+
+export const problems: readonly Problem[] & { 0: Problem } = baseProblems.map((problem) => ({
+  ...problem,
+  description: getDescription(problem.id)
+})) as unknown as readonly Problem[] & { 0: Problem };
 
 export const problemsById: ReadonlyMap<string, Problem> = new Map(
   problems.map((problem) => [problem.id, problem])

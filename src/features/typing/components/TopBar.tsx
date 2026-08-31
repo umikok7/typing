@@ -1,4 +1,4 @@
-import { ChevronDown, Palette } from 'lucide-react';
+import { BookOpen, ChevronDown, Palette } from 'lucide-react';
 
 import { editorThemes } from '@/lib/themes';
 import { cn } from '@/lib/utils';
@@ -17,6 +17,7 @@ export function TopBar() {
   const setTheme = useAppStore((s) => s.setTheme);
   const setLanguage = useAppStore((s) => s.setLanguage);
   const setPickerOpen = useAppStore((s) => s.setPickerOpen);
+  const setViewerOpen = useAppStore((s) => s.setViewerOpen);
   const problem = getProblem(problemId) ?? problems[0];
 
   return (
@@ -53,6 +54,17 @@ export function TopBar() {
           </span>
           <DifficultyBadge difficulty={problem.difficulty} />
           <ChevronDown size={14} className='shrink-0' />
+        </button>
+
+        <button
+          type='button'
+          onClick={() => {
+            setViewerOpen(true);
+          }}
+          className='text-muted-foreground hover:bg-surface hover:text-foreground flex shrink-0 items-center gap-1.5 rounded-md px-2 py-1 text-xs transition-colors'
+        >
+          <BookOpen size={14} />
+          题目
         </button>
 
         <div className='ml-auto flex shrink-0 items-center gap-3'>

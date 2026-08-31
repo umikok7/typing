@@ -3,6 +3,7 @@ export { useAppStore } from './store';
 export { CompletionToast } from './components/CompletionToast';
 export { DifficultyBadge } from './components/DifficultyBadge';
 export { ProblemPicker } from './components/ProblemPicker';
+export { ProblemViewer } from './components/ProblemViewer';
 export { TopBar } from './components/TopBar';
 export { TypingArea } from './components/TypingArea';
 export type { Difficulty, Language, Problem } from './types';

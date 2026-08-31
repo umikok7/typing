@@ -1,6 +1,13 @@
 import type { CSSProperties } from 'react';
 
-import { CompletionToast, ProblemPicker, TopBar, TypingArea, useAppStore } from '@/features/typing';
+import {
+  CompletionToast,
+  ProblemPicker,
+  ProblemViewer,
+  TopBar,
+  TypingArea,
+  useAppStore
+} from '@/features/typing';
 import { editorThemes } from '@/lib/themes';
 
 export function PracticePage() {
@@ -17,6 +24,7 @@ export function PracticePage() {
       <TypingArea />
       <CompletionToast />
       <ProblemPicker />
+      <ProblemViewer />
     </div>
   );
 }
