@@ -60,6 +60,36 @@ import searchRotatedTsSource from './ts/search_in_rotated_sorted_array.ts?raw';
 import trappingRainWaterTsSource from './ts/trapping_rain_water.ts?raw';
 import twoSumTsSource from './ts/two_sum.ts?raw';
 import validParenthesesTsSource from './ts/valid_parentheses.ts?raw';
+import threeSumJavaSource from './java/3sum.java?raw';
+import addTwoNumbersJavaSource from './java/add_two_numbers.java?raw';
+import bestTimeJavaSource from './java/best_time_to_buy_and_sell_stock.java?raw';
+import binaryTreeInorderJavaSource from './java/binary_tree_inorder_traversal.java?raw';
+import binaryTreeLevelOrderJavaSource from './java/binary_tree_level_order_traversal.java?raw';
+import climbingStairsJavaSource from './java/climbing_stairs.java?raw';
+import containerWithMostWaterJavaSource from './java/container_with_most_water.java?raw';
+import findFirstLastJavaSource from './java/find_first_and_last_position_of_element_in_sorted_array.java?raw';
+import generateParenthesisJavaSource from './java/generate_parentheses.java?raw';
+import groupAnagramsJavaSource from './java/group_anagrams.java?raw';
+import largestRectangleJavaSource from './java/largest_rectangle_in_histogram.java?raw';
+import letterCombinationsJavaSource from './java/letter_combinations_of_a_phone_number.java?raw';
+import longestConsecutiveJavaSource from './java/longest_consecutive_sequence.java?raw';
+import longestPalindromeJavaSource from './java/longest_palindromic_substring.java?raw';
+import longestSubstringJavaSource from './java/longest_substring_without_repeating_characters.java?raw';
+import lruCacheJavaSource from './java/lru_cache.java?raw';
+import maxSubArrayJavaSource from './java/maximum_subarray.java?raw';
+import medianJavaSource from './java/median_of_two_sorted_arrays.java?raw';
+import mergeIntervalsJavaSource from './java/merge_intervals.java?raw';
+import mergeKSortedListsJavaSource from './java/merge_k_sorted_lists.java?raw';
+import mergeTwoListsJavaSource from './java/merge_two_sorted_lists.java?raw';
+import minWindowJavaSource from './java/minimum_window_substring.java?raw';
+import permutationsJavaSource from './java/permutations.java?raw';
+import removeNthFromEndJavaSource from './java/remove_nth_node_from_end_of_list.java?raw';
+import reverseListJavaSource from './java/reverse_linked_list.java?raw';
+import rotateImageJavaSource from './java/rotate_image.java?raw';
+import searchRotatedJavaSource from './java/search_in_rotated_sorted_array.java?raw';
+import trappingRainWaterJavaSource from './java/trapping_rain_water.java?raw';
+import twoSumJavaSource from './java/two_sum.java?raw';
+import validParenthesesJavaSource from './java/valid_parentheses.java?raw';
 
 const baseProblems = [
   {
@@ -68,7 +98,7 @@ const baseProblems = [
     title: '两数之和',
     difficulty: 'Easy',
     topic: '哈希表',
-    sources: { go: twoSumSource, ts: twoSumTsSource }
+    sources: { go: twoSumSource, ts: twoSumTsSource, java: twoSumJavaSource }
   },
   {
     id: 'add-two-numbers',
@@ -76,7 +106,7 @@ const baseProblems = [
     title: '两数相加',
     difficulty: 'Medium',
     topic: '链表',
-    sources: { go: addTwoNumbersSource, ts: addTwoNumbersTsSource }
+    sources: { go: addTwoNumbersSource, ts: addTwoNumbersTsSource, java: addTwoNumbersJavaSource }
   },
   {
     id: 'longest-substring-without-repeating-characters',
@@ -84,7 +114,7 @@ const baseProblems = [
     title: '无重复字符的最长子串',
     difficulty: 'Medium',
     topic: '滑动窗口',
-    sources: { go: longestSubstringSource, ts: longestSubstringTsSource }
+    sources: { go: longestSubstringSource, ts: longestSubstringTsSource, java: longestSubstringJavaSource }
   },
   {
     id: 'median-of-two-sorted-arrays',
@@ -92,7 +122,7 @@ const baseProblems = [
     title: '寻找两个正序数组的中位数',
     difficulty: 'Hard',
     topic: '二分查找',
-    sources: { go: medianSource, ts: medianTsSource }
+    sources: { go: medianSource, ts: medianTsSource, java: medianJavaSource }
   },
   {
     id: 'longest-palindromic-substring',
@@ -100,7 +130,7 @@ const baseProblems = [
     title: '最长回文子串',
     difficulty: 'Medium',
     topic: '动态规划',
-    sources: { go: longestPalindromeSource, ts: longestPalindromeTsSource }
+    sources: { go: longestPalindromeSource, ts: longestPalindromeTsSource, java: longestPalindromeJavaSource }
   },
   {
     id: 'container-with-most-water',
@@ -108,7 +138,7 @@ const baseProblems = [
     title: '盛最多水的容器',
     difficulty: 'Medium',
     topic: '双指针',
-    sources: { go: containerWithMostWaterSource, ts: containerWithMostWaterTsSource }
+    sources: { go: containerWithMostWaterSource, ts: containerWithMostWaterTsSource, java: containerWithMostWaterJavaSource }
   },
   {
     id: '3sum',
@@ -116,7 +146,7 @@ const baseProblems = [
     title: '三数之和',
     difficulty: 'Medium',
     topic: '双指针',
-    sources: { go: threeSumSource, ts: threeSumTsSource }
+    sources: { go: threeSumSource, ts: threeSumTsSource, java: threeSumJavaSource }
   },
   {
     id: 'letter-combinations-of-a-phone-number',
@@ -124,7 +154,7 @@ const baseProblems = [
     title: '电话号码的字母组合',
     difficulty: 'Medium',
     topic: '回溯',
-    sources: { go: letterCombinationsSource, ts: letterCombinationsTsSource }
+    sources: { go: letterCombinationsSource, ts: letterCombinationsTsSource, java: letterCombinationsJavaSource }
   },
   {
     id: 'remove-nth-node-from-end-of-list',
@@ -132,7 +162,7 @@ const baseProblems = [
     title: '删除链表的倒数第 N 个结点',
     difficulty: 'Medium',
     topic: '链表',
-    sources: { go: removeNthFromEndSource, ts: removeNthFromEndTsSource }
+    sources: { go: removeNthFromEndSource, ts: removeNthFromEndTsSource, java: removeNthFromEndJavaSource }
   },
   {
     id: 'valid-parentheses',
@@ -140,7 +170,7 @@ const baseProblems = [
     title: '有效的括号',
     difficulty: 'Easy',
     topic: '栈',
-    sources: { go: validParenthesesSource, ts: validParenthesesTsSource }
+    sources: { go: validParenthesesSource, ts: validParenthesesTsSource, java: validParenthesesJavaSource }
   },
   {
     id: 'merge-two-sorted-lists',
@@ -148,7 +178,7 @@ const baseProblems = [
     title: '合并两个有序链表',
     difficulty: 'Easy',
     topic: '链表',
-    sources: { go: mergeTwoListsSource, ts: mergeTwoListsTsSource }
+    sources: { go: mergeTwoListsSource, ts: mergeTwoListsTsSource, java: mergeTwoListsJavaSource }
   },
   {
     id: 'generate-parentheses',
@@ -156,7 +186,7 @@ const baseProblems = [
     title: '括号生成',
     difficulty: 'Medium',
     topic: '回溯',
-    sources: { go: generateParenthesisSource, ts: generateParenthesisTsSource }
+    sources: { go: generateParenthesisSource, ts: generateParenthesisTsSource, java: generateParenthesisJavaSource }
   },
   {
     id: 'merge-k-sorted-lists',
@@ -164,7 +194,7 @@ const baseProblems = [
     title: '合并 K 个升序链表',
     difficulty: 'Hard',
     topic: '堆',
-    sources: { go: mergeKSortedListsSource, ts: mergeKSortedListsTsSource }
+    sources: { go: mergeKSortedListsSource, ts: mergeKSortedListsTsSource, java: mergeKSortedListsJavaSource }
   },
   {
     id: 'search-in-rotated-sorted-array',
@@ -172,7 +202,7 @@ const baseProblems = [
     title: '搜索旋转排序数组',
     difficulty: 'Medium',
     topic: '二分查找',
-    sources: { go: searchRotatedSource, ts: searchRotatedTsSource }
+    sources: { go: searchRotatedSource, ts: searchRotatedTsSource, java: searchRotatedJavaSource }
   },
   {
     id: 'find-first-and-last-position-of-element-in-sorted-array',
@@ -180,7 +210,7 @@ const baseProblems = [
     title: '在排序数组中查找元素的第一个和最后一个位置',
     difficulty: 'Medium',
     topic: '二分查找',
-    sources: { go: findFirstLastSource, ts: findFirstLastTsSource }
+    sources: { go: findFirstLastSource, ts: findFirstLastTsSource, java: findFirstLastJavaSource }
   },
   {
     id: 'trapping-rain-water',
@@ -188,7 +218,7 @@ const baseProblems = [
     title: '接雨水',
     difficulty: 'Hard',
     topic: '双指针',
-    sources: { go: trappingRainWaterSource, ts: trappingRainWaterTsSource }
+    sources: { go: trappingRainWaterSource, ts: trappingRainWaterTsSource, java: trappingRainWaterJavaSource }
   },
   {
     id: 'permutations',
@@ -196,7 +226,7 @@ const baseProblems = [
     title: '全排列',
     difficulty: 'Medium',
     topic: '回溯',
-    sources: { go: permutationsSource, ts: permutationsTsSource }
+    sources: { go: permutationsSource, ts: permutationsTsSource, java: permutationsJavaSource }
   },
   {
     id: 'rotate-image',
@@ -204,7 +234,7 @@ const baseProblems = [
     title: '旋转图像',
     difficulty: 'Medium',
     topic: '数组',
-    sources: { go: rotateImageSource, ts: rotateImageTsSource }
+    sources: { go: rotateImageSource, ts: rotateImageTsSource, java: rotateImageJavaSource }
   },
   {
     id: 'group-anagrams',
@@ -212,7 +242,7 @@ const baseProblems = [
     title: '字母异位词分组',
     difficulty: 'Medium',
     topic: '哈希表',
-    sources: { go: groupAnagramsSource, ts: groupAnagramsTsSource }
+    sources: { go: groupAnagramsSource, ts: groupAnagramsTsSource, java: groupAnagramsJavaSource }
   },
   {
     id: 'maximum-subarray',
@@ -220,7 +250,7 @@ const baseProblems = [
     title: '最大子数组和',
     difficulty: 'Easy',
     topic: '动态规划',
-    sources: { go: maxSubArraySource, ts: maxSubArrayTsSource }
+    sources: { go: maxSubArraySource, ts: maxSubArrayTsSource, java: maxSubArrayJavaSource }
   },
   {
     id: 'merge-intervals',
@@ -228,7 +258,7 @@ const baseProblems = [
     title: '合并区间',
     difficulty: 'Medium',
     topic: '排序',
-    sources: { go: mergeIntervalsSource, ts: mergeIntervalsTsSource }
+    sources: { go: mergeIntervalsSource, ts: mergeIntervalsTsSource, java: mergeIntervalsJavaSource }
   },
   {
     id: 'climbing-stairs',
@@ -236,7 +266,7 @@ const baseProblems = [
     title: '爬楼梯',
     difficulty: 'Easy',
     topic: '动态规划',
-    sources: { go: climbingStairsSource, ts: climbingStairsTsSource }
+    sources: { go: climbingStairsSource, ts: climbingStairsTsSource, java: climbingStairsJavaSource }
   },
   {
     id: 'binary-tree-inorder-traversal',
@@ -244,7 +274,7 @@ const baseProblems = [
     title: '二叉树的中序遍历',
     difficulty: 'Easy',
     topic: '二叉树',
-    sources: { go: binaryTreeInorderSource, ts: binaryTreeInorderTsSource }
+    sources: { go: binaryTreeInorderSource, ts: binaryTreeInorderTsSource, java: binaryTreeInorderJavaSource }
   },
   {
     id: 'binary-tree-level-order-traversal',
@@ -252,7 +282,7 @@ const baseProblems = [
     title: '二叉树的层序遍历',
     difficulty: 'Medium',
     topic: '二叉树',
-    sources: { go: binaryTreeLevelOrderSource, ts: binaryTreeLevelOrderTsSource }
+    sources: { go: binaryTreeLevelOrderSource, ts: binaryTreeLevelOrderTsSource, java: binaryTreeLevelOrderJavaSource }
   },
   {
     id: 'best-time-to-buy-and-sell-stock',
@@ -260,7 +290,7 @@ const baseProblems = [
     title: '买卖股票的最佳时机',
     difficulty: 'Easy',
     topic: '动态规划',
-    sources: { go: bestTimeSource, ts: bestTimeTsSource }
+    sources: { go: bestTimeSource, ts: bestTimeTsSource, java: bestTimeJavaSource }
   },
   {
     id: 'longest-consecutive-sequence',
@@ -268,7 +298,7 @@ const baseProblems = [
     title: '最长连续序列',
     difficulty: 'Medium',
     topic: '哈希表',
-    sources: { go: longestConsecutiveSource, ts: longestConsecutiveTsSource }
+    sources: { go: longestConsecutiveSource, ts: longestConsecutiveTsSource, java: longestConsecutiveJavaSource }
   },
   {
     id: 'lru-cache',
@@ -276,7 +306,7 @@ const baseProblems = [
     title: 'LRU 缓存',
     difficulty: 'Medium',
     topic: '设计',
-    sources: { go: lruCacheSource, ts: lruCacheTsSource }
+    sources: { go: lruCacheSource, ts: lruCacheTsSource, java: lruCacheJavaSource }
   },
   {
     id: 'reverse-linked-list',
@@ -284,7 +314,7 @@ const baseProblems = [
     title: '反转链表',
     difficulty: 'Easy',
     topic: '链表',
-    sources: { go: reverseListSource, ts: reverseListTsSource }
+    sources: { go: reverseListSource, ts: reverseListTsSource, java: reverseListJavaSource }
   },
   {
     id: 'minimum-window-substring',
@@ -292,7 +322,7 @@ const baseProblems = [
     title: '最小覆盖子串',
     difficulty: 'Hard',
     topic: '滑动窗口',
-    sources: { go: minWindowSource, ts: minWindowTsSource }
+    sources: { go: minWindowSource, ts: minWindowTsSource, java: minWindowJavaSource }
   },
   {
     id: 'largest-rectangle-in-histogram',
@@ -300,7 +330,7 @@ const baseProblems = [
     title: '柱状图中最大的矩形',
     difficulty: 'Hard',
     topic: '单调栈',
-    sources: { go: largestRectangleSource, ts: largestRectangleTsSource }
+    sources: { go: largestRectangleSource, ts: largestRectangleTsSource, java: largestRectangleJavaSource }
   }
 ];
 

@@ -8,7 +8,8 @@ import { getProblem, problems } from '../data/problems';
 import { useAppStore } from '../store';
 import { DifficultyBadge } from './DifficultyBadge';
 
-const LANGUAGES: Language[] = ['go', 'ts'];
+const LANGUAGES: Language[] = ['go', 'ts', 'java'];
+const LANGUAGE_LABELS: Record<Language, string> = { go: 'Go', ts: 'TS', java: 'Java' };
 
 export function TopBar() {
   const themeId = useAppStore((s) => s.themeId);
@@ -83,7 +84,7 @@ export function TopBar() {
                     : 'text-muted-foreground hover:text-foreground'
                 )}
               >
-                {lang === 'go' ? 'Go' : 'TS'}
+                {LANGUAGE_LABELS[lang]}
               </button>
             ))}
           </div>

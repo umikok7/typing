@@ -18,13 +18,14 @@ pnpm format         # prettier --write .
 
 Run a single test: `pnpm test -- src/features/typing/__tests__/store.test.ts`.
 
-Validate the standalone data solutions after editing them (they are excluded from the project's tsc/eslint):
+Validate the standalone data solutions after editing them (they are excluded from the project's tsc/eslint and `.prettierignore`d so prettier won't reformat them):
 - TypeScript: `npx tsc --ignoreConfig --noEmit --strict --target es2020 --lib es2020,dom <file>`
 - Go: `gofmt -l <file>` and compile-check with a `go build` stub (see `data/go`).
+- Java: no JDK is required to author, but syntax can be checked with the `java-parser` npm package (as used by prettier-java); data/java files are 4-space indented, LeetCode-style `class Solution`.
 
 ## What this app is
 
-A web-based code typing trainer: a large centered textarea where you type LeetCode solutions, with the target code shown faded as a ghost backdrop inside the same typing area and your typed text syntax-highlighted live. Corpus is 30 LeetCode Hot 100 problems, each with a Go and a TypeScript solution.
+A web-based code typing trainer: a large centered textarea where you type LeetCode solutions, with the target code shown faded as a ghost backdrop inside the same typing area and your typed text syntax-highlighted live. Corpus is 30 LeetCode Hot 100 problems, each with a Go, a TypeScript and a Java solution.
 
 Core product decisions (do not regress):
 - **Free input, no validation.** The user types unrestricted in a real `<textarea>` — there is NO per-char matching, NO accuracy metrics, NO auto-pairing. Arrow/Enter/Backspace/Tab/click all work natively. "Completion" = `input.length >= reference.length`, shown as a small toast.
@@ -41,7 +42,7 @@ Read `src/lib/highlighter.ts` + `src/lib/use-code-tokens.ts` + `src/features/typ
 
 ## State
 
-Single zustand store: `src/features/typing/store.ts` — `themeId` (persisted to `code-typing:theme-id`), `problemId`, `language` (`'go' | 'ts'`), `pickerOpen`, `input`, plus actions. `setLanguage`/`selectProblem` reset the input. No scattered UI state.
+Single zustand store: `src/features/typing/store.ts` — `themeId` (persisted to `code-typing:theme-id`), `problemId`, `language` (`'go' | 'ts' | 'java'`), `pickerOpen`, `viewerOpen`, `input`, plus actions. `setLanguage`/`selectProblem` reset the input. No scattered UI state.
 
 ## Design tokens
 
@@ -49,8 +50,8 @@ Tailwind v4 `@theme inline` in `src/styles/global.css`. `background`/`foreground
 
 ## Problem data
 
-- `src/features/typing/data/go/*.go` and `data/ts/*.ts` are standalone LeetCode solutions, imported with Vite `?raw` in `data/problems.ts`, which maps each problem to `sources: { go, ts }`.
-- `data/ts/` is excluded from the project tsconfig and eslint (standalone code, validated separately with the `tsc --ignoreConfig` command above). Add new problems by adding a `.go` + `.ts` file and one `problems.ts` entry.
+- `src/features/typing/data/go/*.go`, `data/ts/*.ts` and `data/java/*.java` are standalone LeetCode solutions, imported with Vite `?raw` in `data/problems.ts`, which maps each problem to `sources: { go, ts, java }`.
+- `data/ts/` is excluded from the project tsconfig and eslint (standalone code, validated separately with the `tsc --ignoreConfig` command above). Add new problems by adding a `.go` + `.ts` + `.java` file and one `problems.ts` entry.
 - `Language` lives in `src/types/language.ts` (shared) — the Shiki layer imports it, so it must not live only inside the feature.
 
 ## Structure notes

@@ -64,7 +64,7 @@ make dev     # 启动开发服务器 → http://localhost:5173
 
 ## 新增一道题
 
-在 `src/features/typing/data/` 下添加同名题解（`go/xxx.go` + `ts/xxx.ts`），再在 `data/problems.ts` 里登记一行即可，前端无需其它改动。
+在 `src/features/typing/data/` 下添加同名题解（`go/xxx.go` + `ts/xxx.ts` + `java/xxx.java`），再在 `data/problems.ts` 里登记一行即可，前端无需其它改动。
 
 
 ---

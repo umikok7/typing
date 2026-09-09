@@ -1,4 +1,5 @@
 import goGrammar from '@shikijs/langs/go';
+import javaGrammar from '@shikijs/langs/java';
 import tsGrammar from '@shikijs/langs/typescript';
 import { createHighlighterCore, createJavaScriptRegexEngine, type HighlighterCore } from 'shiki';
 
@@ -6,7 +7,7 @@ import type { Language } from '@/types/language';
 
 import { editorThemes } from './themes';
 
-const SHIKI_LANG: Record<Language, string> = { go: 'go', ts: 'typescript' };
+const SHIKI_LANG: Record<Language, string> = { go: 'go', ts: 'typescript', java: 'java' };
 
 export interface TokenLine {
   start: number;
@@ -28,7 +29,7 @@ let highlighterPromise: Promise<HighlighterCore> | null = null;
 
 export function getHighlighter(): Promise<HighlighterCore> {
   highlighterPromise ??= createHighlighterCore({
-    langs: [goGrammar, tsGrammar],
+    langs: [goGrammar, tsGrammar, javaGrammar],
     themes: editorThemes.map((theme) => theme.raw),
     engine: createJavaScriptRegexEngine({ target: 'auto' })
   }).then((instance) => {

@@ -15,3 +15,8 @@
 
 # local env
 .env*.local
+
+# standalone leetcode solution data (kept author-formatted)
+src/features/typing/data/go
+src/features/typing/data/ts
+src/features/typing/data/java

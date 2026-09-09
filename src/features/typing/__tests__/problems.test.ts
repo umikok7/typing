@@ -7,10 +7,11 @@ describe('problems data', () => {
     expect(problems.length).toBe(30);
   });
 
-  it('every problem has both go and ts sources', () => {
+  it('every problem has go, ts and java sources', () => {
     for (const problem of problems) {
       expect(problem.sources.go.length).toBeGreaterThan(0);
       expect(problem.sources.ts.length).toBeGreaterThan(0);
+      expect(problem.sources.java.length).toBeGreaterThan(0);
     }
   });
 
