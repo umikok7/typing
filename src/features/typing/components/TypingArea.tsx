@@ -6,9 +6,38 @@ import { useSyncCodeTokens } from '@/lib/use-code-tokens';
 
 import { getProblem, problems } from '../data/problems';
 import { useAppStore } from '../store';
+import { applyBackspace, applyChar, applyEnter } from '../editor-behavior';
+import type { EditResult } from '../editor-behavior';
 
 const PAD = 32; // p-8 = 2rem 上下内边距
 const LINE_HEIGHT = 29; // 与 text-lg + leading-[29px] 保持一致
+
+function commitEdit(element: HTMLTextAreaElement, edit: EditResult, setInput: (text: string) => void): void {
+  setInput(edit.text);
+  requestAnimationFrame(() => {
+    element.selectionStart = edit.caret;
+    element.selectionEnd = edit.caretEnd ?? edit.caret;
+  });
+}
+
+function resolveEdit(
+  key: string,
+  input: string,
+  start: number,
+  end: number,
+  indentUnit: string
+): EditResult | null {
+  if (key === 'Enter') {
+    return applyEnter(input, start, end, indentUnit);
+  }
+  if (key === 'Backspace') {
+    return applyBackspace(input, start, end);
+  }
+  if (key.length === 1) {
+    return applyChar(input, start, end, key);
+  }
+  return null;
+}
 
 function computeContentHeight(referenceLineCount: number, input: string): number {
   const inputLineCount = input === '' ? 0 : input.split('\n').length;
@@ -33,6 +62,10 @@ function scrollCaretIntoView(
 }
 
 function LineSpans({ line }: { line: TokenLine }) {
+  if (line.text === '') {
+    // 空行必须占位撑起行高，否则行高塌陷导致高亮层与输入层错位
+    return <>{'​'}</>;
+  }
   const spans = [];
   let i = 0;
   while (i < line.text.length) {
@@ -70,7 +103,7 @@ function PlainLines({ text }: { text: string }) {
   for (const line of lines) {
     nodes.push(
       <div key={offset} className='whitespace-pre'>
-        {line}
+        {line === '' ? '​' : line}
       </div>
     );
     offset += line.length + 1;
@@ -86,6 +119,7 @@ export function TypingArea() {
   const setInput = useAppStore((s) => s.setInput);
   const problem = getProblem(problemId) ?? problems[0];
   const source = problem.sources[language];
+  const indentUnit = language === 'go' ? '\t' : '    ';
   const referenceHl = useSyncCodeTokens(source, language, themeId);
   const inputHl = useSyncCodeTokens(input, language, themeId);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
@@ -109,19 +143,29 @@ export function TypingArea() {
   }, [input]);
 
   function handleKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
-    if (event.key !== 'Tab') {
-      return;
-    }
-    event.preventDefault();
     const element = event.currentTarget;
     const start = element.selectionStart;
     const end = element.selectionEnd;
-    const next = input.slice(0, start) + '\t' + input.slice(end);
-    setInput(next);
-    requestAnimationFrame(() => {
-      element.selectionStart = start + 1;
-      element.selectionEnd = start + 1;
-    });
+
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      commitEdit(
+        element,
+        { text: input.slice(0, start) + '\t' + input.slice(end), caret: start + 1 },
+        setInput
+      );
+      return;
+    }
+    if (event.ctrlKey || event.metaKey || event.altKey) {
+      return;
+    }
+    if (event.key === 'Enter' || event.key === 'Backspace' || event.key.length === 1) {
+      const edit = resolveEdit(event.key, input, start, end, indentUnit);
+      if (edit !== null) {
+        event.preventDefault();
+        commitEdit(element, edit, setInput);
+      }
+    }
   }
 
   let inputContent: ReactNode = null;
