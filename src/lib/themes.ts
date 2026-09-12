@@ -5,6 +5,7 @@ import nord from '@shikijs/themes/nord';
 import oneDarkPro from '@shikijs/themes/one-dark-pro';
 import tokyoNight from '@shikijs/themes/tokyo-night';
 import type { ThemeRegistrationRaw } from 'shiki';
+import { xcodeDark } from './theme/xcode-dark'
 
 export interface EditorTheme {
   id: string;
@@ -33,7 +34,8 @@ export const editorThemes: readonly EditorTheme[] & { 0: EditorTheme } = [
   makeTheme(tokyoNight as unknown as ThemeRegistrationRaw, 'Tokyo Night'),
   makeTheme(dracula as unknown as ThemeRegistrationRaw, 'Dracula'),
   makeTheme(catppuccinMocha as unknown as ThemeRegistrationRaw, 'Catppuccin Mocha'),
-  makeTheme(nord as unknown as ThemeRegistrationRaw, 'Nord')
+  makeTheme(nord as unknown as ThemeRegistrationRaw, 'Nord'),
+  makeTheme(xcodeDark, 'Xcode Dark')
 ];
 
 export const DEFAULT_THEME_ID = editorThemes[0].id;

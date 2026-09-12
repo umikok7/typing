@@ -6,7 +6,7 @@ import { useSyncCodeTokens } from '@/lib/use-code-tokens';
 
 import { getProblem, problems } from '../data/problems';
 import { useAppStore } from '../store';
-import { applyBackspace, applyChar, applyEnter } from '../editor-behavior';
+import { applyBackspace, applyChar, applyEnter, applyStartNewLine } from '../editor-behavior';
 import type { EditResult } from '../editor-behavior';
 
 const PAD = 32; // p-8 = 2rem 上下内边距
@@ -154,6 +154,11 @@ export function TypingArea() {
         { text: input.slice(0, start) + '\t' + input.slice(end), caret: start + 1 },
         setInput
       );
+      return;
+    }
+    if (event.key === 'Enter' && event.shiftKey && !event.ctrlKey && !event.metaKey && !event.altKey) {
+      event.preventDefault();
+      commitEdit(element, applyStartNewLine(input, start), setInput);
       return;
     }
     if (event.ctrlKey || event.metaKey || event.altKey) {

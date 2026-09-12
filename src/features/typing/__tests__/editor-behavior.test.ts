@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { applyBackspace, applyChar, applyEnter } from '../editor-behavior';
+import { applyBackspace, applyChar, applyEnter, applyStartNewLine } from '../editor-behavior';
 
 describe('applyChar', () => {
   it('auto-pairs an opener with the caret in between', () => {
@@ -55,6 +55,24 @@ describe('applyEnter', () => {
   it('uses the inherited indent when between plain chars', () => {
     const result = applyEnter('    x := 1', 4, 4, '\t');
     expect(result).toEqual({ text: '    \n    x := 1', caret: 9 });
+  });
+});
+
+describe('applyStartNewLine', () => {
+  it('starts a new line below the current one, keeping the rest of the line in place', () => {
+    const input = 'if ok {\n    return a, b';
+    const result = applyStartNewLine(input, 15);
+    expect(result).toEqual({ text: 'if ok {\n    return a, b\n    ', caret: 28 });
+  });
+
+  it('keeps text after the caret on the original line', () => {
+    const result = applyStartNewLine('abc', 1);
+    expect(result).toEqual({ text: 'abc\n', caret: 4 });
+  });
+
+  it('appends a newline with inherited indent at the last line', () => {
+    const result = applyStartNewLine('    x := 1', 6);
+    expect(result).toEqual({ text: '    x := 1\n    ', caret: 15 });
   });
 });
 

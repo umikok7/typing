@@ -98,6 +98,22 @@ export function applyEnter(input: string, start: number, end: number, indentUnit
 }
 
 /**
+ * JetBrains 式 Shift+Enter（Start New Line）：
+ * 光标在行中间时，直接在当前行下方新起一行并继承缩进，
+ * 光标之后的文本留在原行。
+ */
+export function applyStartNewLine(input: string, start: number): EditResult {
+  const lineStart = input.lastIndexOf('\n', start - 1) + 1;
+  const lineEnd = input.indexOf('\n', start);
+  const end = lineEnd === -1 ? input.length : lineEnd;
+  const baseIndent = /^[ \t]*/.exec(input.slice(lineStart, end))?.[0] ?? '';
+  return {
+    text: input.slice(0, end) + '\n' + baseIndent + input.slice(end),
+    caret: end + 1 + baseIndent.length
+  };
+}
+
+/**
  * VS Code 式退格行为：光标位于空配对中间（如 ()）时整对删除；
  * 其余情况返回 null，走浏览器默认删除。
  */
