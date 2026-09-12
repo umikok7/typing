@@ -3,8 +3,8 @@ import { describe, expect, it } from 'vitest';
 import { problems } from '../data/problems';
 
 describe('problems data', () => {
-  it('has 30 curated problems', () => {
-    expect(problems.length).toBe(30);
+  it('has 100 curated problems', () => {
+    expect(problems.length).toBe(100);
   });
 
   it('every problem has go, ts and java sources', () => {
