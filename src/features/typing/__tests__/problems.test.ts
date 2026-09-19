@@ -7,11 +7,12 @@ describe('problems data', () => {
     expect(problems.length).toBe(100);
   });
 
-  it('every problem has go, ts and java sources', () => {
+  it('every problem has go, TypeScript, java and dart sources', () => {
     for (const problem of problems) {
       expect(problem.sources.go.length).toBeGreaterThan(0);
-      expect(problem.sources.ts.length).toBeGreaterThan(0);
+      expect(problem.sources.TypeScript.length).toBeGreaterThan(0);
       expect(problem.sources.java.length).toBeGreaterThan(0);
+      expect(problem.sources.dart.length).toBeGreaterThan(0);
     }
   });
 

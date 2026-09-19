@@ -300,6 +300,106 @@ import validParenthesesTsSource from './ts/valid_parentheses.ts?raw';
 import validateBinarySearchTreeTsSource from './ts/validate_binary_search_tree.ts?raw';
 import wordBreakTsSource from './ts/word_break.ts?raw';
 import wordSearchTsSource from './ts/word_search.ts?raw';
+import threeSumDartSource from './dart/3sum.dart?raw';
+import addTwoNumbersDartSource from './dart/add_two_numbers.dart?raw';
+import bestTimeDartSource from './dart/best_time_to_buy_and_sell_stock.dart?raw';
+import binaryTreeInorderDartSource from './dart/binary_tree_inorder_traversal.dart?raw';
+import binaryTreeLevelOrderDartSource from './dart/binary_tree_level_order_traversal.dart?raw';
+import binaryTreeMaximumPathSumDartSource from './dart/binary_tree_maximum_path_sum.dart?raw';
+import binaryTreeRightSideViewDartSource from './dart/binary_tree_right_side_view.dart?raw';
+import climbingStairsDartSource from './dart/climbing_stairs.dart?raw';
+import coinChangeDartSource from './dart/coin_change.dart?raw';
+import combinationSumDartSource from './dart/combination_sum.dart?raw';
+import constructBinaryTreeFromPreorderAndInorderTraversalDartSource from './dart/construct_binary_tree_from_preorder_and_inorder_traversal.dart?raw';
+import containerWithMostWaterDartSource from './dart/container_with_most_water.dart?raw';
+import convertSortedArrayToBinarySearchTreeDartSource from './dart/convert_sorted_array_to_binary_search_tree.dart?raw';
+import copyListWithRandomPointerDartSource from './dart/copy_list_with_random_pointer.dart?raw';
+import courseScheduleDartSource from './dart/course_schedule.dart?raw';
+import dailyTemperaturesDartSource from './dart/daily_temperatures.dart?raw';
+import decodeStringDartSource from './dart/decode_string.dart?raw';
+import diameterOfBinaryTreeDartSource from './dart/diameter_of_binary_tree.dart?raw';
+import editDistanceDartSource from './dart/edit_distance.dart?raw';
+import findFirstLastDartSource from './dart/find_first_and_last_position_of_element_in_sorted_array.dart?raw';
+import findMedianFromDataStreamDartSource from './dart/find_median_from_data_stream.dart?raw';
+import findMinimumInRotatedSortedArrayDartSource from './dart/find_minimum_in_rotated_sorted_array.dart?raw';
+import findTheDuplicateNumberDartSource from './dart/find_the_duplicate_number.dart?raw';
+import firstMissingPositiveDartSource from './dart/first_missing_positive.dart?raw';
+import flattenBinaryTreeToLinkedListDartSource from './dart/flatten_binary_tree_to_linked_list.dart?raw';
+import gameOfLifeDartSource from './dart/game_of_life.dart?raw';
+import generateParenthesisDartSource from './dart/generate_parentheses.dart?raw';
+import groupAnagramsDartSource from './dart/group_anagrams.dart?raw';
+import houseRobberDartSource from './dart/house_robber.dart?raw';
+import implementTriePrefixTreeDartSource from './dart/implement_trie_prefix_tree.dart?raw';
+import intersectionOfTwoLinkedListsDartSource from './dart/intersection_of_two_linked_lists.dart?raw';
+import invertBinaryTreeDartSource from './dart/invert_binary_tree.dart?raw';
+import jumpGameDartSource from './dart/jump_game.dart?raw';
+import jumpGameIiDartSource from './dart/jump_game_ii.dart?raw';
+import kthLargestElementInAnArrayDartSource from './dart/kth_largest_element_in_an_array.dart?raw';
+import kthSmallestElementInABstDartSource from './dart/kth_smallest_element_in_a_bst.dart?raw';
+import largestRectangleDartSource from './dart/largest_rectangle_in_histogram.dart?raw';
+import letterCombinationsDartSource from './dart/letter_combinations_of_a_phone_number.dart?raw';
+import linkedListCycleDartSource from './dart/linked_list_cycle.dart?raw';
+import linkedListCycleIiDartSource from './dart/linked_list_cycle_ii.dart?raw';
+import longestCommonSubsequenceDartSource from './dart/longest_common_subsequence.dart?raw';
+import longestConsecutiveDartSource from './dart/longest_consecutive_sequence.dart?raw';
+import longestIncreasingSubsequenceDartSource from './dart/longest_increasing_subsequence.dart?raw';
+import longestPalindromeDartSource from './dart/longest_palindromic_substring.dart?raw';
+import longestRepeatingCharacterReplacementDartSource from './dart/longest_repeating_character_replacement.dart?raw';
+import longestSubstringDartSource from './dart/longest_substring_without_repeating_characters.dart?raw';
+import longestValidParenthesesDartSource from './dart/longest_valid_parentheses.dart?raw';
+import lowestCommonAncestorOfABinaryTreeDartSource from './dart/lowest_common_ancestor_of_a_binary_tree.dart?raw';
+import lruCacheDartSource from './dart/lru_cache.dart?raw';
+import majorityElementDartSource from './dart/majority_element.dart?raw';
+import maximumDepthOfBinaryTreeDartSource from './dart/maximum_depth_of_binary_tree.dart?raw';
+import maximumProductSubarrayDartSource from './dart/maximum_product_subarray.dart?raw';
+import maxSubArrayDartSource from './dart/maximum_subarray.dart?raw';
+import medianDartSource from './dart/median_of_two_sorted_arrays.dart?raw';
+import mergeIntervalsDartSource from './dart/merge_intervals.dart?raw';
+import mergeKSortedListsDartSource from './dart/merge_k_sorted_lists.dart?raw';
+import mergeTwoListsDartSource from './dart/merge_two_sorted_lists.dart?raw';
+import minStackDartSource from './dart/min_stack.dart?raw';
+import minimumPathSumDartSource from './dart/minimum_path_sum.dart?raw';
+import minimumSizeSubarraySumDartSource from './dart/minimum_size_subarray_sum.dart?raw';
+import minWindowDartSource from './dart/minimum_window_substring.dart?raw';
+import moveZeroesDartSource from './dart/move_zeroes.dart?raw';
+import nQueensDartSource from './dart/n_queens.dart?raw';
+import nextPermutationDartSource from './dart/next_permutation.dart?raw';
+import numberOfIslandsDartSource from './dart/number_of_islands.dart?raw';
+import palindromePartitioningDartSource from './dart/palindrome_partitioning.dart?raw';
+import partitionEqualSubsetSumDartSource from './dart/partition_equal_subset_sum.dart?raw';
+import partitionLabelsDartSource from './dart/partition_labels.dart?raw';
+import pascalsTriangleDartSource from './dart/pascals_triangle.dart?raw';
+import pathSumIiiDartSource from './dart/path_sum_iii.dart?raw';
+import perfectSquaresDartSource from './dart/perfect_squares.dart?raw';
+import permutationsDartSource from './dart/permutations.dart?raw';
+import productOfArrayExceptSelfDartSource from './dart/product_of_array_except_self.dart?raw';
+import removeNthFromEndDartSource from './dart/remove_nth_node_from_end_of_list.dart?raw';
+import reverseListDartSource from './dart/reverse_linked_list.dart?raw';
+import reverseNodesInKGroupDartSource from './dart/reverse_nodes_in_k_group.dart?raw';
+import rotateArrayDartSource from './dart/rotate_array.dart?raw';
+import rotateImageDartSource from './dart/rotate_image.dart?raw';
+import rottingOrangesDartSource from './dart/rotting_oranges.dart?raw';
+import searchA2dMatrixDartSource from './dart/search_a_2d_matrix.dart?raw';
+import searchA2dMatrixIiDartSource from './dart/search_a_2d_matrix_ii.dart?raw';
+import searchRotatedDartSource from './dart/search_in_rotated_sorted_array.dart?raw';
+import searchInsertPositionDartSource from './dart/search_insert_position.dart?raw';
+import setMatrixZeroesDartSource from './dart/set_matrix_zeroes.dart?raw';
+import singleNumberDartSource from './dart/single_number.dart?raw';
+import slidingWindowMaximumDartSource from './dart/sliding_window_maximum.dart?raw';
+import sortColorsDartSource from './dart/sort_colors.dart?raw';
+import sortListDartSource from './dart/sort_list.dart?raw';
+import spiralMatrixDartSource from './dart/spiral_matrix.dart?raw';
+import subarraySumEqualsKDartSource from './dart/subarray_sum_equals_k.dart?raw';
+import subsetsDartSource from './dart/subsets.dart?raw';
+import symmetricTreeDartSource from './dart/symmetric_tree.dart?raw';
+import topKFrequentElementsDartSource from './dart/top_k_frequent_elements.dart?raw';
+import trappingRainWaterDartSource from './dart/trapping_rain_water.dart?raw';
+import twoSumDartSource from './dart/two_sum.dart?raw';
+import uniquePathsDartSource from './dart/unique_paths.dart?raw';
+import validParenthesesDartSource from './dart/valid_parentheses.dart?raw';
+import validateBinarySearchTreeDartSource from './dart/validate_binary_search_tree.dart?raw';
+import wordBreakDartSource from './dart/word_break.dart?raw';
+import wordSearchDartSource from './dart/word_search.dart?raw';
 
 const baseProblems = [
   {
@@ -308,7 +408,7 @@ const baseProblems = [
     title: '两数之和',
     difficulty: 'Easy',
     topic: '哈希表',
-    sources: { go: twoSumSource, ts: twoSumTsSource, java: twoSumJavaSource }
+    sources: { go: twoSumSource, TypeScript: twoSumTsSource, java: twoSumJavaSource, dart: twoSumDartSource }
   },
   {
     id: 'add-two-numbers',
@@ -316,7 +416,7 @@ const baseProblems = [
     title: '两数相加',
     difficulty: 'Medium',
     topic: '链表',
-    sources: { go: addTwoNumbersSource, ts: addTwoNumbersTsSource, java: addTwoNumbersJavaSource }
+    sources: { go: addTwoNumbersSource, TypeScript: addTwoNumbersTsSource, java: addTwoNumbersJavaSource, dart: addTwoNumbersDartSource }
   },
   {
     id: 'longest-substring-without-repeating-characters',
@@ -326,8 +426,8 @@ const baseProblems = [
     topic: '滑动窗口',
     sources: {
       go: longestSubstringSource,
-      ts: longestSubstringTsSource,
-      java: longestSubstringJavaSource
+      TypeScript: longestSubstringTsSource,
+      java: longestSubstringJavaSource, dart: longestSubstringDartSource
     }
   },
   {
@@ -336,7 +436,7 @@ const baseProblems = [
     title: '寻找两个正序数组的中位数',
     difficulty: 'Hard',
     topic: '二分查找',
-    sources: { go: medianSource, ts: medianTsSource, java: medianJavaSource }
+    sources: { go: medianSource, TypeScript: medianTsSource, java: medianJavaSource, dart: medianDartSource }
   },
   {
     id: 'longest-palindromic-substring',
@@ -346,8 +446,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: longestPalindromeSource,
-      ts: longestPalindromeTsSource,
-      java: longestPalindromeJavaSource
+      TypeScript: longestPalindromeTsSource,
+      java: longestPalindromeJavaSource, dart: longestPalindromeDartSource
     }
   },
   {
@@ -358,8 +458,8 @@ const baseProblems = [
     topic: '双指针',
     sources: {
       go: containerWithMostWaterSource,
-      ts: containerWithMostWaterTsSource,
-      java: containerWithMostWaterJavaSource
+      TypeScript: containerWithMostWaterTsSource,
+      java: containerWithMostWaterJavaSource, dart: containerWithMostWaterDartSource
     }
   },
   {
@@ -368,7 +468,7 @@ const baseProblems = [
     title: '三数之和',
     difficulty: 'Medium',
     topic: '双指针',
-    sources: { go: threeSumSource, ts: threeSumTsSource, java: threeSumJavaSource }
+    sources: { go: threeSumSource, TypeScript: threeSumTsSource, java: threeSumJavaSource, dart: threeSumDartSource }
   },
   {
     id: 'letter-combinations-of-a-phone-number',
@@ -378,8 +478,8 @@ const baseProblems = [
     topic: '回溯',
     sources: {
       go: letterCombinationsSource,
-      ts: letterCombinationsTsSource,
-      java: letterCombinationsJavaSource
+      TypeScript: letterCombinationsTsSource,
+      java: letterCombinationsJavaSource, dart: letterCombinationsDartSource
     }
   },
   {
@@ -390,8 +490,8 @@ const baseProblems = [
     topic: '链表',
     sources: {
       go: removeNthFromEndSource,
-      ts: removeNthFromEndTsSource,
-      java: removeNthFromEndJavaSource
+      TypeScript: removeNthFromEndTsSource,
+      java: removeNthFromEndJavaSource, dart: removeNthFromEndDartSource
     }
   },
   {
@@ -402,8 +502,8 @@ const baseProblems = [
     topic: '栈',
     sources: {
       go: validParenthesesSource,
-      ts: validParenthesesTsSource,
-      java: validParenthesesJavaSource
+      TypeScript: validParenthesesTsSource,
+      java: validParenthesesJavaSource, dart: validParenthesesDartSource
     }
   },
   {
@@ -412,7 +512,7 @@ const baseProblems = [
     title: '合并两个有序链表',
     difficulty: 'Easy',
     topic: '链表',
-    sources: { go: mergeTwoListsSource, ts: mergeTwoListsTsSource, java: mergeTwoListsJavaSource }
+    sources: { go: mergeTwoListsSource, TypeScript: mergeTwoListsTsSource, java: mergeTwoListsJavaSource, dart: mergeTwoListsDartSource }
   },
   {
     id: 'generate-parentheses',
@@ -422,8 +522,8 @@ const baseProblems = [
     topic: '回溯',
     sources: {
       go: generateParenthesisSource,
-      ts: generateParenthesisTsSource,
-      java: generateParenthesisJavaSource
+      TypeScript: generateParenthesisTsSource,
+      java: generateParenthesisJavaSource, dart: generateParenthesisDartSource
     }
   },
   {
@@ -434,8 +534,8 @@ const baseProblems = [
     topic: '堆',
     sources: {
       go: mergeKSortedListsSource,
-      ts: mergeKSortedListsTsSource,
-      java: mergeKSortedListsJavaSource
+      TypeScript: mergeKSortedListsTsSource,
+      java: mergeKSortedListsJavaSource, dart: mergeKSortedListsDartSource
     }
   },
   {
@@ -446,8 +546,8 @@ const baseProblems = [
     topic: '链表',
     sources: {
       go: reverseNodesInKGroupSource,
-      ts: reverseNodesInKGroupTsSource,
-      java: reverseNodesInKGroupJavaSource
+      TypeScript: reverseNodesInKGroupTsSource,
+      java: reverseNodesInKGroupJavaSource, dart: reverseNodesInKGroupDartSource
     }
   },
   {
@@ -458,8 +558,8 @@ const baseProblems = [
     topic: '数组',
     sources: {
       go: nextPermutationSource,
-      ts: nextPermutationTsSource,
-      java: nextPermutationJavaSource
+      TypeScript: nextPermutationTsSource,
+      java: nextPermutationJavaSource, dart: nextPermutationDartSource
     }
   },
   {
@@ -470,8 +570,8 @@ const baseProblems = [
     topic: '栈',
     sources: {
       go: longestValidParenthesesSource,
-      ts: longestValidParenthesesTsSource,
-      java: longestValidParenthesesJavaSource
+      TypeScript: longestValidParenthesesTsSource,
+      java: longestValidParenthesesJavaSource, dart: longestValidParenthesesDartSource
     }
   },
   {
@@ -480,7 +580,7 @@ const baseProblems = [
     title: '搜索旋转排序数组',
     difficulty: 'Medium',
     topic: '二分查找',
-    sources: { go: searchRotatedSource, ts: searchRotatedTsSource, java: searchRotatedJavaSource }
+    sources: { go: searchRotatedSource, TypeScript: searchRotatedTsSource, java: searchRotatedJavaSource, dart: searchRotatedDartSource }
   },
   {
     id: 'find-first-and-last-position-of-element-in-sorted-array',
@@ -488,7 +588,7 @@ const baseProblems = [
     title: '在排序数组中查找元素的第一个和最后一个位置',
     difficulty: 'Medium',
     topic: '二分查找',
-    sources: { go: findFirstLastSource, ts: findFirstLastTsSource, java: findFirstLastJavaSource }
+    sources: { go: findFirstLastSource, TypeScript: findFirstLastTsSource, java: findFirstLastJavaSource, dart: findFirstLastDartSource }
   },
   {
     id: 'search-insert-position',
@@ -498,8 +598,8 @@ const baseProblems = [
     topic: '二分查找',
     sources: {
       go: searchInsertPositionSource,
-      ts: searchInsertPositionTsSource,
-      java: searchInsertPositionJavaSource
+      TypeScript: searchInsertPositionTsSource,
+      java: searchInsertPositionJavaSource, dart: searchInsertPositionDartSource
     }
   },
   {
@@ -510,8 +610,8 @@ const baseProblems = [
     topic: '回溯',
     sources: {
       go: combinationSumSource,
-      ts: combinationSumTsSource,
-      java: combinationSumJavaSource
+      TypeScript: combinationSumTsSource,
+      java: combinationSumJavaSource, dart: combinationSumDartSource
     }
   },
   {
@@ -522,8 +622,8 @@ const baseProblems = [
     topic: '哈希表',
     sources: {
       go: firstMissingPositiveSource,
-      ts: firstMissingPositiveTsSource,
-      java: firstMissingPositiveJavaSource
+      TypeScript: firstMissingPositiveTsSource,
+      java: firstMissingPositiveJavaSource, dart: firstMissingPositiveDartSource
     }
   },
   {
@@ -534,8 +634,8 @@ const baseProblems = [
     topic: '双指针',
     sources: {
       go: trappingRainWaterSource,
-      ts: trappingRainWaterTsSource,
-      java: trappingRainWaterJavaSource
+      TypeScript: trappingRainWaterTsSource,
+      java: trappingRainWaterJavaSource, dart: trappingRainWaterDartSource
     }
   },
   {
@@ -544,7 +644,7 @@ const baseProblems = [
     title: '跳跃游戏 II',
     difficulty: 'Medium',
     topic: '贪心',
-    sources: { go: jumpGameIiSource, ts: jumpGameIiTsSource, java: jumpGameIiJavaSource }
+    sources: { go: jumpGameIiSource, TypeScript: jumpGameIiTsSource, java: jumpGameIiJavaSource, dart: jumpGameIiDartSource }
   },
   {
     id: 'permutations',
@@ -552,7 +652,7 @@ const baseProblems = [
     title: '全排列',
     difficulty: 'Medium',
     topic: '回溯',
-    sources: { go: permutationsSource, ts: permutationsTsSource, java: permutationsJavaSource }
+    sources: { go: permutationsSource, TypeScript: permutationsTsSource, java: permutationsJavaSource, dart: permutationsDartSource }
   },
   {
     id: 'rotate-image',
@@ -560,7 +660,7 @@ const baseProblems = [
     title: '旋转图像',
     difficulty: 'Medium',
     topic: '数组',
-    sources: { go: rotateImageSource, ts: rotateImageTsSource, java: rotateImageJavaSource }
+    sources: { go: rotateImageSource, TypeScript: rotateImageTsSource, java: rotateImageJavaSource, dart: rotateImageDartSource }
   },
   {
     id: 'group-anagrams',
@@ -568,7 +668,7 @@ const baseProblems = [
     title: '字母异位词分组',
     difficulty: 'Medium',
     topic: '哈希表',
-    sources: { go: groupAnagramsSource, ts: groupAnagramsTsSource, java: groupAnagramsJavaSource }
+    sources: { go: groupAnagramsSource, TypeScript: groupAnagramsTsSource, java: groupAnagramsJavaSource, dart: groupAnagramsDartSource }
   },
   {
     id: 'n-queens',
@@ -576,7 +676,7 @@ const baseProblems = [
     title: 'N 皇后',
     difficulty: 'Hard',
     topic: '回溯',
-    sources: { go: nQueensSource, ts: nQueensTsSource, java: nQueensJavaSource }
+    sources: { go: nQueensSource, TypeScript: nQueensTsSource, java: nQueensJavaSource, dart: nQueensDartSource }
   },
   {
     id: 'maximum-subarray',
@@ -584,7 +684,7 @@ const baseProblems = [
     title: '最大子数组和',
     difficulty: 'Easy',
     topic: '动态规划',
-    sources: { go: maxSubArraySource, ts: maxSubArrayTsSource, java: maxSubArrayJavaSource }
+    sources: { go: maxSubArraySource, TypeScript: maxSubArrayTsSource, java: maxSubArrayJavaSource, dart: maxSubArrayDartSource }
   },
   {
     id: 'spiral-matrix',
@@ -592,7 +692,7 @@ const baseProblems = [
     title: '螺旋矩阵',
     difficulty: 'Medium',
     topic: '数组',
-    sources: { go: spiralMatrixSource, ts: spiralMatrixTsSource, java: spiralMatrixJavaSource }
+    sources: { go: spiralMatrixSource, TypeScript: spiralMatrixTsSource, java: spiralMatrixJavaSource, dart: spiralMatrixDartSource }
   },
   {
     id: 'jump-game',
@@ -600,7 +700,7 @@ const baseProblems = [
     title: '跳跃游戏',
     difficulty: 'Medium',
     topic: '贪心',
-    sources: { go: jumpGameSource, ts: jumpGameTsSource, java: jumpGameJavaSource }
+    sources: { go: jumpGameSource, TypeScript: jumpGameTsSource, java: jumpGameJavaSource, dart: jumpGameDartSource }
   },
   {
     id: 'merge-intervals',
@@ -610,8 +710,8 @@ const baseProblems = [
     topic: '排序',
     sources: {
       go: mergeIntervalsSource,
-      ts: mergeIntervalsTsSource,
-      java: mergeIntervalsJavaSource
+      TypeScript: mergeIntervalsTsSource,
+      java: mergeIntervalsJavaSource, dart: mergeIntervalsDartSource
     }
   },
   {
@@ -620,7 +720,7 @@ const baseProblems = [
     title: '不同路径',
     difficulty: 'Medium',
     topic: '动态规划',
-    sources: { go: uniquePathsSource, ts: uniquePathsTsSource, java: uniquePathsJavaSource }
+    sources: { go: uniquePathsSource, TypeScript: uniquePathsTsSource, java: uniquePathsJavaSource, dart: uniquePathsDartSource }
   },
   {
     id: 'minimum-path-sum',
@@ -630,8 +730,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: minimumPathSumSource,
-      ts: minimumPathSumTsSource,
-      java: minimumPathSumJavaSource
+      TypeScript: minimumPathSumTsSource,
+      java: minimumPathSumJavaSource, dart: minimumPathSumDartSource
     }
   },
   {
@@ -642,8 +742,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: climbingStairsSource,
-      ts: climbingStairsTsSource,
-      java: climbingStairsJavaSource
+      TypeScript: climbingStairsTsSource,
+      java: climbingStairsJavaSource, dart: climbingStairsDartSource
     }
   },
   {
@@ -652,7 +752,7 @@ const baseProblems = [
     title: '编辑距离',
     difficulty: 'Hard',
     topic: '动态规划',
-    sources: { go: editDistanceSource, ts: editDistanceTsSource, java: editDistanceJavaSource }
+    sources: { go: editDistanceSource, TypeScript: editDistanceTsSource, java: editDistanceJavaSource, dart: editDistanceDartSource }
   },
   {
     id: 'set-matrix-zeroes',
@@ -662,8 +762,8 @@ const baseProblems = [
     topic: '数组',
     sources: {
       go: setMatrixZeroesSource,
-      ts: setMatrixZeroesTsSource,
-      java: setMatrixZeroesJavaSource
+      TypeScript: setMatrixZeroesTsSource,
+      java: setMatrixZeroesJavaSource, dart: setMatrixZeroesDartSource
     }
   },
   {
@@ -674,8 +774,8 @@ const baseProblems = [
     topic: '二分查找',
     sources: {
       go: searchA2dMatrixSource,
-      ts: searchA2dMatrixTsSource,
-      java: searchA2dMatrixJavaSource
+      TypeScript: searchA2dMatrixTsSource,
+      java: searchA2dMatrixJavaSource, dart: searchA2dMatrixDartSource
     }
   },
   {
@@ -684,7 +784,7 @@ const baseProblems = [
     title: '颜色分类',
     difficulty: 'Medium',
     topic: '双指针',
-    sources: { go: sortColorsSource, ts: sortColorsTsSource, java: sortColorsJavaSource }
+    sources: { go: sortColorsSource, TypeScript: sortColorsTsSource, java: sortColorsJavaSource, dart: sortColorsDartSource }
   },
   {
     id: 'minimum-window-substring',
@@ -692,7 +792,7 @@ const baseProblems = [
     title: '最小覆盖子串',
     difficulty: 'Hard',
     topic: '滑动窗口',
-    sources: { go: minWindowSource, ts: minWindowTsSource, java: minWindowJavaSource }
+    sources: { go: minWindowSource, TypeScript: minWindowTsSource, java: minWindowJavaSource, dart: minWindowDartSource }
   },
   {
     id: 'subsets',
@@ -700,7 +800,7 @@ const baseProblems = [
     title: '子集',
     difficulty: 'Medium',
     topic: '回溯',
-    sources: { go: subsetsSource, ts: subsetsTsSource, java: subsetsJavaSource }
+    sources: { go: subsetsSource, TypeScript: subsetsTsSource, java: subsetsJavaSource, dart: subsetsDartSource }
   },
   {
     id: 'word-search',
@@ -708,7 +808,7 @@ const baseProblems = [
     title: '单词搜索',
     difficulty: 'Medium',
     topic: '回溯',
-    sources: { go: wordSearchSource, ts: wordSearchTsSource, java: wordSearchJavaSource }
+    sources: { go: wordSearchSource, TypeScript: wordSearchTsSource, java: wordSearchJavaSource, dart: wordSearchDartSource }
   },
   {
     id: 'largest-rectangle-in-histogram',
@@ -718,8 +818,8 @@ const baseProblems = [
     topic: '单调栈',
     sources: {
       go: largestRectangleSource,
-      ts: largestRectangleTsSource,
-      java: largestRectangleJavaSource
+      TypeScript: largestRectangleTsSource,
+      java: largestRectangleJavaSource, dart: largestRectangleDartSource
     }
   },
   {
@@ -730,8 +830,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: binaryTreeInorderSource,
-      ts: binaryTreeInorderTsSource,
-      java: binaryTreeInorderJavaSource
+      TypeScript: binaryTreeInorderTsSource,
+      java: binaryTreeInorderJavaSource, dart: binaryTreeInorderDartSource
     }
   },
   {
@@ -742,8 +842,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: validateBinarySearchTreeSource,
-      ts: validateBinarySearchTreeTsSource,
-      java: validateBinarySearchTreeJavaSource
+      TypeScript: validateBinarySearchTreeTsSource,
+      java: validateBinarySearchTreeJavaSource, dart: validateBinarySearchTreeDartSource
     }
   },
   {
@@ -752,7 +852,7 @@ const baseProblems = [
     title: '对称二叉树',
     difficulty: 'Easy',
     topic: '二叉树',
-    sources: { go: symmetricTreeSource, ts: symmetricTreeTsSource, java: symmetricTreeJavaSource }
+    sources: { go: symmetricTreeSource, TypeScript: symmetricTreeTsSource, java: symmetricTreeJavaSource, dart: symmetricTreeDartSource }
   },
   {
     id: 'binary-tree-level-order-traversal',
@@ -762,8 +862,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: binaryTreeLevelOrderSource,
-      ts: binaryTreeLevelOrderTsSource,
-      java: binaryTreeLevelOrderJavaSource
+      TypeScript: binaryTreeLevelOrderTsSource,
+      java: binaryTreeLevelOrderJavaSource, dart: binaryTreeLevelOrderDartSource
     }
   },
   {
@@ -774,8 +874,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: maximumDepthOfBinaryTreeSource,
-      ts: maximumDepthOfBinaryTreeTsSource,
-      java: maximumDepthOfBinaryTreeJavaSource
+      TypeScript: maximumDepthOfBinaryTreeTsSource,
+      java: maximumDepthOfBinaryTreeJavaSource, dart: maximumDepthOfBinaryTreeDartSource
     }
   },
   {
@@ -786,8 +886,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: constructBinaryTreeFromPreorderAndInorderTraversalSource,
-      ts: constructBinaryTreeFromPreorderAndInorderTraversalTsSource,
-      java: constructBinaryTreeFromPreorderAndInorderTraversalJavaSource
+      TypeScript: constructBinaryTreeFromPreorderAndInorderTraversalTsSource,
+      java: constructBinaryTreeFromPreorderAndInorderTraversalJavaSource, dart: constructBinaryTreeFromPreorderAndInorderTraversalDartSource
     }
   },
   {
@@ -798,8 +898,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: convertSortedArrayToBinarySearchTreeSource,
-      ts: convertSortedArrayToBinarySearchTreeTsSource,
-      java: convertSortedArrayToBinarySearchTreeJavaSource
+      TypeScript: convertSortedArrayToBinarySearchTreeTsSource,
+      java: convertSortedArrayToBinarySearchTreeJavaSource, dart: convertSortedArrayToBinarySearchTreeDartSource
     }
   },
   {
@@ -810,8 +910,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: flattenBinaryTreeToLinkedListSource,
-      ts: flattenBinaryTreeToLinkedListTsSource,
-      java: flattenBinaryTreeToLinkedListJavaSource
+      TypeScript: flattenBinaryTreeToLinkedListTsSource,
+      java: flattenBinaryTreeToLinkedListJavaSource, dart: flattenBinaryTreeToLinkedListDartSource
     }
   },
   {
@@ -822,8 +922,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: pascalsTriangleSource,
-      ts: pascalsTriangleTsSource,
-      java: pascalsTriangleJavaSource
+      TypeScript: pascalsTriangleTsSource,
+      java: pascalsTriangleJavaSource, dart: pascalsTriangleDartSource
     }
   },
   {
@@ -832,7 +932,7 @@ const baseProblems = [
     title: '买卖股票的最佳时机',
     difficulty: 'Easy',
     topic: '动态规划',
-    sources: { go: bestTimeSource, ts: bestTimeTsSource, java: bestTimeJavaSource }
+    sources: { go: bestTimeSource, TypeScript: bestTimeTsSource, java: bestTimeJavaSource, dart: bestTimeDartSource }
   },
   {
     id: 'binary-tree-maximum-path-sum',
@@ -842,8 +942,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: binaryTreeMaximumPathSumSource,
-      ts: binaryTreeMaximumPathSumTsSource,
-      java: binaryTreeMaximumPathSumJavaSource
+      TypeScript: binaryTreeMaximumPathSumTsSource,
+      java: binaryTreeMaximumPathSumJavaSource, dart: binaryTreeMaximumPathSumDartSource
     }
   },
   {
@@ -854,8 +954,8 @@ const baseProblems = [
     topic: '哈希表',
     sources: {
       go: longestConsecutiveSource,
-      ts: longestConsecutiveTsSource,
-      java: longestConsecutiveJavaSource
+      TypeScript: longestConsecutiveTsSource,
+      java: longestConsecutiveJavaSource, dart: longestConsecutiveDartSource
     }
   },
   {
@@ -866,8 +966,8 @@ const baseProblems = [
     topic: '回溯',
     sources: {
       go: palindromePartitioningSource,
-      ts: palindromePartitioningTsSource,
-      java: palindromePartitioningJavaSource
+      TypeScript: palindromePartitioningTsSource,
+      java: palindromePartitioningJavaSource, dart: palindromePartitioningDartSource
     }
   },
   {
@@ -876,7 +976,7 @@ const baseProblems = [
     title: '只出现一次的数字',
     difficulty: 'Easy',
     topic: '哈希表',
-    sources: { go: singleNumberSource, ts: singleNumberTsSource, java: singleNumberJavaSource }
+    sources: { go: singleNumberSource, TypeScript: singleNumberTsSource, java: singleNumberJavaSource, dart: singleNumberDartSource }
   },
   {
     id: 'copy-list-with-random-pointer',
@@ -886,8 +986,8 @@ const baseProblems = [
     topic: '链表',
     sources: {
       go: copyListWithRandomPointerSource,
-      ts: copyListWithRandomPointerTsSource,
-      java: copyListWithRandomPointerJavaSource
+      TypeScript: copyListWithRandomPointerTsSource,
+      java: copyListWithRandomPointerJavaSource, dart: copyListWithRandomPointerDartSource
     }
   },
   {
@@ -896,7 +996,7 @@ const baseProblems = [
     title: '单词拆分',
     difficulty: 'Medium',
     topic: '动态规划',
-    sources: { go: wordBreakSource, ts: wordBreakTsSource, java: wordBreakJavaSource }
+    sources: { go: wordBreakSource, TypeScript: wordBreakTsSource, java: wordBreakJavaSource, dart: wordBreakDartSource }
   },
   {
     id: 'linked-list-cycle',
@@ -906,8 +1006,8 @@ const baseProblems = [
     topic: '链表',
     sources: {
       go: linkedListCycleSource,
-      ts: linkedListCycleTsSource,
-      java: linkedListCycleJavaSource
+      TypeScript: linkedListCycleTsSource,
+      java: linkedListCycleJavaSource, dart: linkedListCycleDartSource
     }
   },
   {
@@ -918,8 +1018,8 @@ const baseProblems = [
     topic: '链表',
     sources: {
       go: linkedListCycleIiSource,
-      ts: linkedListCycleIiTsSource,
-      java: linkedListCycleIiJavaSource
+      TypeScript: linkedListCycleIiTsSource,
+      java: linkedListCycleIiJavaSource, dart: linkedListCycleIiDartSource
     }
   },
   {
@@ -928,7 +1028,7 @@ const baseProblems = [
     title: 'LRU 缓存',
     difficulty: 'Medium',
     topic: '设计',
-    sources: { go: lruCacheSource, ts: lruCacheTsSource, java: lruCacheJavaSource }
+    sources: { go: lruCacheSource, TypeScript: lruCacheTsSource, java: lruCacheJavaSource, dart: lruCacheDartSource }
   },
   {
     id: 'sort-list',
@@ -936,7 +1036,7 @@ const baseProblems = [
     title: '排序链表',
     difficulty: 'Medium',
     topic: '链表',
-    sources: { go: sortListSource, ts: sortListTsSource, java: sortListJavaSource }
+    sources: { go: sortListSource, TypeScript: sortListTsSource, java: sortListJavaSource, dart: sortListDartSource }
   },
   {
     id: 'maximum-product-subarray',
@@ -946,8 +1046,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: maximumProductSubarraySource,
-      ts: maximumProductSubarrayTsSource,
-      java: maximumProductSubarrayJavaSource
+      TypeScript: maximumProductSubarrayTsSource,
+      java: maximumProductSubarrayJavaSource, dart: maximumProductSubarrayDartSource
     }
   },
   {
@@ -958,8 +1058,8 @@ const baseProblems = [
     topic: '二分查找',
     sources: {
       go: findMinimumInRotatedSortedArraySource,
-      ts: findMinimumInRotatedSortedArrayTsSource,
-      java: findMinimumInRotatedSortedArrayJavaSource
+      TypeScript: findMinimumInRotatedSortedArrayTsSource,
+      java: findMinimumInRotatedSortedArrayJavaSource, dart: findMinimumInRotatedSortedArrayDartSource
     }
   },
   {
@@ -968,7 +1068,7 @@ const baseProblems = [
     title: '最小栈',
     difficulty: 'Medium',
     topic: '设计',
-    sources: { go: minStackSource, ts: minStackTsSource, java: minStackJavaSource }
+    sources: { go: minStackSource, TypeScript: minStackTsSource, java: minStackJavaSource, dart: minStackDartSource }
   },
   {
     id: 'intersection-of-two-linked-lists',
@@ -978,8 +1078,8 @@ const baseProblems = [
     topic: '链表',
     sources: {
       go: intersectionOfTwoLinkedListsSource,
-      ts: intersectionOfTwoLinkedListsTsSource,
-      java: intersectionOfTwoLinkedListsJavaSource
+      TypeScript: intersectionOfTwoLinkedListsTsSource,
+      java: intersectionOfTwoLinkedListsJavaSource, dart: intersectionOfTwoLinkedListsDartSource
     }
   },
   {
@@ -990,8 +1090,8 @@ const baseProblems = [
     topic: '哈希表',
     sources: {
       go: majorityElementSource,
-      ts: majorityElementTsSource,
-      java: majorityElementJavaSource
+      TypeScript: majorityElementTsSource,
+      java: majorityElementJavaSource, dart: majorityElementDartSource
     }
   },
   {
@@ -1000,7 +1100,7 @@ const baseProblems = [
     title: '轮转数组',
     difficulty: 'Medium',
     topic: '双指针',
-    sources: { go: rotateArraySource, ts: rotateArrayTsSource, java: rotateArrayJavaSource }
+    sources: { go: rotateArraySource, TypeScript: rotateArrayTsSource, java: rotateArrayJavaSource, dart: rotateArrayDartSource }
   },
   {
     id: 'house-robber',
@@ -1008,7 +1108,7 @@ const baseProblems = [
     title: '打家劫舍',
     difficulty: 'Medium',
     topic: '动态规划',
-    sources: { go: houseRobberSource, ts: houseRobberTsSource, java: houseRobberJavaSource }
+    sources: { go: houseRobberSource, TypeScript: houseRobberTsSource, java: houseRobberJavaSource, dart: houseRobberDartSource }
   },
   {
     id: 'binary-tree-right-side-view',
@@ -1018,8 +1118,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: binaryTreeRightSideViewSource,
-      ts: binaryTreeRightSideViewTsSource,
-      java: binaryTreeRightSideViewJavaSource
+      TypeScript: binaryTreeRightSideViewTsSource,
+      java: binaryTreeRightSideViewJavaSource, dart: binaryTreeRightSideViewDartSource
     }
   },
   {
@@ -1030,8 +1130,8 @@ const baseProblems = [
     topic: '图',
     sources: {
       go: numberOfIslandsSource,
-      ts: numberOfIslandsTsSource,
-      java: numberOfIslandsJavaSource
+      TypeScript: numberOfIslandsTsSource,
+      java: numberOfIslandsJavaSource, dart: numberOfIslandsDartSource
     }
   },
   {
@@ -1040,7 +1140,7 @@ const baseProblems = [
     title: '反转链表',
     difficulty: 'Easy',
     topic: '链表',
-    sources: { go: reverseListSource, ts: reverseListTsSource, java: reverseListJavaSource }
+    sources: { go: reverseListSource, TypeScript: reverseListTsSource, java: reverseListJavaSource, dart: reverseListDartSource }
   },
   {
     id: 'course-schedule',
@@ -1050,8 +1150,8 @@ const baseProblems = [
     topic: '图',
     sources: {
       go: courseScheduleSource,
-      ts: courseScheduleTsSource,
-      java: courseScheduleJavaSource
+      TypeScript: courseScheduleTsSource,
+      java: courseScheduleJavaSource, dart: courseScheduleDartSource
     }
   },
   {
@@ -1062,8 +1162,8 @@ const baseProblems = [
     topic: '设计',
     sources: {
       go: implementTriePrefixTreeSource,
-      ts: implementTriePrefixTreeTsSource,
-      java: implementTriePrefixTreeJavaSource
+      TypeScript: implementTriePrefixTreeTsSource,
+      java: implementTriePrefixTreeJavaSource, dart: implementTriePrefixTreeDartSource
     }
   },
   {
@@ -1074,8 +1174,8 @@ const baseProblems = [
     topic: '滑动窗口',
     sources: {
       go: minimumSizeSubarraySumSource,
-      ts: minimumSizeSubarraySumTsSource,
-      java: minimumSizeSubarraySumJavaSource
+      TypeScript: minimumSizeSubarraySumTsSource,
+      java: minimumSizeSubarraySumJavaSource, dart: minimumSizeSubarraySumDartSource
     }
   },
   {
@@ -1086,8 +1186,8 @@ const baseProblems = [
     topic: '堆',
     sources: {
       go: kthLargestElementInAnArraySource,
-      ts: kthLargestElementInAnArrayTsSource,
-      java: kthLargestElementInAnArrayJavaSource
+      TypeScript: kthLargestElementInAnArrayTsSource,
+      java: kthLargestElementInAnArrayJavaSource, dart: kthLargestElementInAnArrayDartSource
     }
   },
   {
@@ -1098,8 +1198,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: invertBinaryTreeSource,
-      ts: invertBinaryTreeTsSource,
-      java: invertBinaryTreeJavaSource
+      TypeScript: invertBinaryTreeTsSource,
+      java: invertBinaryTreeJavaSource, dart: invertBinaryTreeDartSource
     }
   },
   {
@@ -1110,8 +1210,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: kthSmallestElementInABstSource,
-      ts: kthSmallestElementInABstTsSource,
-      java: kthSmallestElementInABstJavaSource
+      TypeScript: kthSmallestElementInABstTsSource,
+      java: kthSmallestElementInABstJavaSource, dart: kthSmallestElementInABstDartSource
     }
   },
   {
@@ -1122,8 +1222,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: lowestCommonAncestorOfABinaryTreeSource,
-      ts: lowestCommonAncestorOfABinaryTreeTsSource,
-      java: lowestCommonAncestorOfABinaryTreeJavaSource
+      TypeScript: lowestCommonAncestorOfABinaryTreeTsSource,
+      java: lowestCommonAncestorOfABinaryTreeJavaSource, dart: lowestCommonAncestorOfABinaryTreeDartSource
     }
   },
   {
@@ -1134,8 +1234,8 @@ const baseProblems = [
     topic: '数组',
     sources: {
       go: productOfArrayExceptSelfSource,
-      ts: productOfArrayExceptSelfTsSource,
-      java: productOfArrayExceptSelfJavaSource
+      TypeScript: productOfArrayExceptSelfTsSource,
+      java: productOfArrayExceptSelfJavaSource, dart: productOfArrayExceptSelfDartSource
     }
   },
   {
@@ -1146,8 +1246,8 @@ const baseProblems = [
     topic: '堆',
     sources: {
       go: slidingWindowMaximumSource,
-      ts: slidingWindowMaximumTsSource,
-      java: slidingWindowMaximumJavaSource
+      TypeScript: slidingWindowMaximumTsSource,
+      java: slidingWindowMaximumJavaSource, dart: slidingWindowMaximumDartSource
     }
   },
   {
@@ -1158,8 +1258,8 @@ const baseProblems = [
     topic: '二分查找',
     sources: {
       go: searchA2dMatrixIiSource,
-      ts: searchA2dMatrixIiTsSource,
-      java: searchA2dMatrixIiJavaSource
+      TypeScript: searchA2dMatrixIiTsSource,
+      java: searchA2dMatrixIiJavaSource, dart: searchA2dMatrixIiDartSource
     }
   },
   {
@@ -1170,8 +1270,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: perfectSquaresSource,
-      ts: perfectSquaresTsSource,
-      java: perfectSquaresJavaSource
+      TypeScript: perfectSquaresTsSource,
+      java: perfectSquaresJavaSource, dart: perfectSquaresDartSource
     }
   },
   {
@@ -1180,7 +1280,7 @@ const baseProblems = [
     title: '移动零',
     difficulty: 'Easy',
     topic: '双指针',
-    sources: { go: moveZeroesSource, ts: moveZeroesTsSource, java: moveZeroesJavaSource }
+    sources: { go: moveZeroesSource, TypeScript: moveZeroesTsSource, java: moveZeroesJavaSource, dart: moveZeroesDartSource }
   },
   {
     id: 'find-the-duplicate-number',
@@ -1190,8 +1290,8 @@ const baseProblems = [
     topic: '双指针',
     sources: {
       go: findTheDuplicateNumberSource,
-      ts: findTheDuplicateNumberTsSource,
-      java: findTheDuplicateNumberJavaSource
+      TypeScript: findTheDuplicateNumberTsSource,
+      java: findTheDuplicateNumberJavaSource, dart: findTheDuplicateNumberDartSource
     }
   },
   {
@@ -1200,7 +1300,7 @@ const baseProblems = [
     title: '生命游戏',
     difficulty: 'Medium',
     topic: '数组',
-    sources: { go: gameOfLifeSource, ts: gameOfLifeTsSource, java: gameOfLifeJavaSource }
+    sources: { go: gameOfLifeSource, TypeScript: gameOfLifeTsSource, java: gameOfLifeJavaSource, dart: gameOfLifeDartSource }
   },
   {
     id: 'find-median-from-data-stream',
@@ -1210,8 +1310,8 @@ const baseProblems = [
     topic: '堆',
     sources: {
       go: findMedianFromDataStreamSource,
-      ts: findMedianFromDataStreamTsSource,
-      java: findMedianFromDataStreamJavaSource
+      TypeScript: findMedianFromDataStreamTsSource,
+      java: findMedianFromDataStreamJavaSource, dart: findMedianFromDataStreamDartSource
     }
   },
   {
@@ -1222,8 +1322,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: longestIncreasingSubsequenceSource,
-      ts: longestIncreasingSubsequenceTsSource,
-      java: longestIncreasingSubsequenceJavaSource
+      TypeScript: longestIncreasingSubsequenceTsSource,
+      java: longestIncreasingSubsequenceJavaSource, dart: longestIncreasingSubsequenceDartSource
     }
   },
   {
@@ -1232,7 +1332,7 @@ const baseProblems = [
     title: '零钱兑换',
     difficulty: 'Medium',
     topic: '动态规划',
-    sources: { go: coinChangeSource, ts: coinChangeTsSource, java: coinChangeJavaSource }
+    sources: { go: coinChangeSource, TypeScript: coinChangeTsSource, java: coinChangeJavaSource, dart: coinChangeDartSource }
   },
   {
     id: 'top-k-frequent-elements',
@@ -1242,8 +1342,8 @@ const baseProblems = [
     topic: '堆',
     sources: {
       go: topKFrequentElementsSource,
-      ts: topKFrequentElementsTsSource,
-      java: topKFrequentElementsJavaSource
+      TypeScript: topKFrequentElementsTsSource,
+      java: topKFrequentElementsJavaSource, dart: topKFrequentElementsDartSource
     }
   },
   {
@@ -1252,7 +1352,7 @@ const baseProblems = [
     title: '字符串解码',
     difficulty: 'Medium',
     topic: '栈',
-    sources: { go: decodeStringSource, ts: decodeStringTsSource, java: decodeStringJavaSource }
+    sources: { go: decodeStringSource, TypeScript: decodeStringTsSource, java: decodeStringJavaSource, dart: decodeStringDartSource }
   },
   {
     id: 'partition-equal-subset-sum',
@@ -1262,8 +1362,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: partitionEqualSubsetSumSource,
-      ts: partitionEqualSubsetSumTsSource,
-      java: partitionEqualSubsetSumJavaSource
+      TypeScript: partitionEqualSubsetSumTsSource,
+      java: partitionEqualSubsetSumJavaSource, dart: partitionEqualSubsetSumDartSource
     }
   },
   {
@@ -1274,8 +1374,8 @@ const baseProblems = [
     topic: '滑动窗口',
     sources: {
       go: longestRepeatingCharacterReplacementSource,
-      ts: longestRepeatingCharacterReplacementTsSource,
-      java: longestRepeatingCharacterReplacementJavaSource
+      TypeScript: longestRepeatingCharacterReplacementTsSource,
+      java: longestRepeatingCharacterReplacementJavaSource, dart: longestRepeatingCharacterReplacementDartSource
     }
   },
   {
@@ -1284,7 +1384,7 @@ const baseProblems = [
     title: '路径总和 III',
     difficulty: 'Medium',
     topic: '二叉树',
-    sources: { go: pathSumIiiSource, ts: pathSumIiiTsSource, java: pathSumIiiJavaSource }
+    sources: { go: pathSumIiiSource, TypeScript: pathSumIiiTsSource, java: pathSumIiiJavaSource, dart: pathSumIiiDartSource }
   },
   {
     id: 'diameter-of-binary-tree',
@@ -1294,8 +1394,8 @@ const baseProblems = [
     topic: '二叉树',
     sources: {
       go: diameterOfBinaryTreeSource,
-      ts: diameterOfBinaryTreeTsSource,
-      java: diameterOfBinaryTreeJavaSource
+      TypeScript: diameterOfBinaryTreeTsSource,
+      java: diameterOfBinaryTreeJavaSource, dart: diameterOfBinaryTreeDartSource
     }
   },
   {
@@ -1306,8 +1406,8 @@ const baseProblems = [
     topic: '哈希表',
     sources: {
       go: subarraySumEqualsKSource,
-      ts: subarraySumEqualsKTsSource,
-      java: subarraySumEqualsKJavaSource
+      TypeScript: subarraySumEqualsKTsSource,
+      java: subarraySumEqualsKJavaSource, dart: subarraySumEqualsKDartSource
     }
   },
   {
@@ -1318,8 +1418,8 @@ const baseProblems = [
     topic: '单调栈',
     sources: {
       go: dailyTemperaturesSource,
-      ts: dailyTemperaturesTsSource,
-      java: dailyTemperaturesJavaSource
+      TypeScript: dailyTemperaturesTsSource,
+      java: dailyTemperaturesJavaSource, dart: dailyTemperaturesDartSource
     }
   },
   {
@@ -1330,8 +1430,8 @@ const baseProblems = [
     topic: '双指针',
     sources: {
       go: partitionLabelsSource,
-      ts: partitionLabelsTsSource,
-      java: partitionLabelsJavaSource
+      TypeScript: partitionLabelsTsSource,
+      java: partitionLabelsJavaSource, dart: partitionLabelsDartSource
     }
   },
   {
@@ -1342,8 +1442,8 @@ const baseProblems = [
     topic: '图',
     sources: {
       go: rottingOrangesSource,
-      ts: rottingOrangesTsSource,
-      java: rottingOrangesJavaSource
+      TypeScript: rottingOrangesTsSource,
+      java: rottingOrangesJavaSource, dart: rottingOrangesDartSource
     }
   },
   {
@@ -1354,8 +1454,8 @@ const baseProblems = [
     topic: '动态规划',
     sources: {
       go: longestCommonSubsequenceSource,
-      ts: longestCommonSubsequenceTsSource,
-      java: longestCommonSubsequenceJavaSource
+      TypeScript: longestCommonSubsequenceTsSource,
+      java: longestCommonSubsequenceJavaSource, dart: longestCommonSubsequenceDartSource
     }
   }
 ];

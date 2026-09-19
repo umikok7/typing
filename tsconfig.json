@@ -41,5 +41,11 @@
     "prettier.config.ts",
     "stylelint.config.ts"
   ],
-  "exclude": ["node_modules", "dist", "skills", "src/features/typing/data/ts"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "skills",
+    "src/features/typing/data/ts",
+    "src/features/typing/data/dart"
+  ]
 }

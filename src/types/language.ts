@@ -1,1 +1,1 @@
-export type Language = 'go' | 'ts' | 'java';
+export type Language = 'go' | 'TypeScript' | 'java' | 'dart';

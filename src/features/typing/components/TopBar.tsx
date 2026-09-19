@@ -8,9 +8,14 @@ import { getProblem, problems } from '../data/problems';
 import { useAppStore } from '../store';
 import { DifficultyBadge } from './DifficultyBadge';
 
-const LANGUAGES: Language[] = ['go', 'ts', 'java'];
-const LANGUAGE_LABELS: Record<Language, string> = { go: 'Go', ts: 'TS', java: 'Java' };
-
+const LANGUAGES: Language[] = ['go', 'TypeScript', 'java', 'dart'];
+const LANGUAGE_LABELS: Record<Language, React.ReactNode> = {
+    go: <img src="/go.svg" alt="Go" width={16} height={16} className="brightness-0 invert" />,
+    TypeScript: <img src="/typescript.svg" alt="TypeScript" width={16} height={16} className="brightness-0 invert" />,
+    java: <img src="/Java.svg" alt="Java" width={16} height={16} className="brightness-0 invert" />,
+    dart: <img src="/dart.svg" alt="Dart" width={16} height={16} className="brightness-0 invert" />
+  };
+  
 export function TopBar() {
   const themeId = useAppStore((s) => s.themeId);
   const problemId = useAppStore((s) => s.problemId);
@@ -69,7 +74,7 @@ export function TopBar() {
         </button>
 
         <div className='ml-auto flex shrink-0 items-center gap-3'>
-          <div className='border-border flex items-center rounded-md border p-0.5'>
+          <div className='border-border flex items-center rounded-md  p-0.5'>
             {LANGUAGES.map((lang) => (
               <button
                 key={lang}
@@ -79,9 +84,10 @@ export function TopBar() {
                 }}
                 className={cn(
                   'rounded px-2.5 py-1 font-mono text-xs font-medium transition-colors',
+                  'border', // 始终有边框，避免选中时布局跳动
                   language === lang
-                    ? 'bg-accent/15 text-accent'
-                    : 'text-muted-foreground hover:text-foreground'
+                    ? 'border-accent/40 bg-accent/10 text-accent'
+                    : 'border-transparent text-muted-foreground hover:border-border hover:text-foreground'
                 )}
               >
                 {LANGUAGE_LABELS[lang]}

@@ -44,8 +44,8 @@ describe('useAppStore', () => {
 
   it('setLanguage switches language and clears the input', () => {
     useAppStore.getState().setInput('package main');
-    useAppStore.getState().setLanguage('ts');
-    expect(useAppStore.getState().language).toBe('ts');
+    useAppStore.getState().setLanguage('TypeScript');
+    expect(useAppStore.getState().language).toBe('TypeScript');
     expect(useAppStore.getState().input).toBe('');
   });
 });
