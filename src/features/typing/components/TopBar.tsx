@@ -12,7 +12,7 @@ const LANGUAGES: Language[] = ['go', 'TypeScript', 'java', 'dart'];
 const LANGUAGE_LABELS: Record<Language, React.ReactNode> = {
     go: <img src="/go.svg" alt="Go" width={16} height={16} className="brightness-0 invert" />,
     TypeScript: <img src="/typescript.svg" alt="TypeScript" width={16} height={16} className="brightness-0 invert" />,
-    java: <img src="/java-2.svg" alt="Java" width={16} height={16} className="brightness-0 invert" />,
+    java: <img src="/streamline-ultimate-java.svg" alt="Java" width={16} height={16} className="brightness-0 invert" />,
     dart: <img src="/dart.svg" alt="Dart" width={16} height={16} className="brightness-0 invert" />
   };
   
