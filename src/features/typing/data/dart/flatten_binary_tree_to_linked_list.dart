@@ -1,14 +1,14 @@
 class Solution {
-  TreeNode? prev;
+	TreeNode? prev;
 
-  void flatten(TreeNode? root) {
-    if (root == null) {
-      return;
-    }
-    flatten(root.right);
-    flatten(root.left);
-    root.right = prev;
-    root.left = null;
-    prev = root;
-  }
+	void flatten(TreeNode? root) {
+		if (root == null) {
+			return;
+		}
+		flatten(root.right);
+		flatten(root.left);
+		root.right = prev;
+		root.left = null;
+		prev = root;
+	}
 }
